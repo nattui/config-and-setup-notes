@@ -75,8 +75,9 @@ alias reload="source ~/.zshrc"
 alias s="cursor ~/.zshrc"
 alias setting="cursor ~/.zshrc"
 alias settings="cursor ~/.zshrc"
+alias sg="cursor ~/.gitconfig"
 # Zip folder
-alias settings="zip -er <FILE_NAME>.zip <FOLDER_NAME>"
+alias zipf="zip -er <FILE_NAME>.zip <FOLDER_NAME>"
 # Quick navigation
 alias god="cd /Users/snowshift/Documents/"
 alias gog="cd /Users/snowshift/Documents/github"
