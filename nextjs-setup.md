@@ -57,21 +57,21 @@ pnpm install -D prettier-plugin-tailwindcss
 `eslint.config.mjs`
 
 ```jsx
-import { FlatCompat } from "@eslint/eslintrc";
-import prettier from "eslint-config-prettier";
-import perfectionist from "eslint-plugin-perfectionist";
-import unicorn from "eslint-plugin-unicorn";
-import { dirname } from "node:path";
-import { fileURLToPath } from "node:url";
+import { FlatCompat } from "@eslint/eslintrc"
+import perfectionist from "eslint-plugin-perfectionist"
+import unicorn from "eslint-plugin-unicorn"
+import { dirname } from "node:path"
+import { fileURLToPath } from "node:url"
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 
-const compat = new FlatCompat({ baseDirectory: __dirname });
+const compat = new FlatCompat({ baseDirectory: __dirname })
 
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
-  prettier,
+  ...compat.config({
+    extends: ["next/core-web-vitals", "next/typescript", "prettier"],
+  }),
   {
     plugins: {
       perfectionist,
@@ -91,9 +91,9 @@ const eslintConfig = [
       "unicorn/import-style": "off",
     },
   },
-];
+]
 
-export default eslintConfig;
+export default eslintConfig
 ```
 
 `.prettierignore`
@@ -130,8 +130,8 @@ import {
   fontWeight,
   screens10 as screens,
   spacing10 as spacing,
-} from "@nattui/tailwind-theme-config";
-import type { Config } from "tailwindcss";
+} from "@nattui/tailwind-theme-config"
+import type { Config } from "tailwindcss"
 
 const config: Config = {
   content: [
@@ -162,9 +162,9 @@ const config: Config = {
     screens,
     spacing,
   },
-};
+}
 
-export default config;
+export default config
 ```
 
 `.vscode/settings.json`
