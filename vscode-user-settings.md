@@ -1,6 +1,6 @@
 Last updated: `2024/12/26`
 
-```json
+```jsonc
 {
   "accessibility.signals.format": { "sound": "always" }, // Makes a sound on format
   "accessibility.signals.save": { "sound": "always" }, // Makes a sound on save
