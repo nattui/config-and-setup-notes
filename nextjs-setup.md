@@ -98,7 +98,7 @@ export default eslintConfig
 
 `.prettierignore`
 
-```toml
+```
 pnpm-lock.yaml
 ```
 
