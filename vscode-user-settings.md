@@ -31,13 +31,15 @@ Last updated: `2024/12/26`
   "files.insertFinalNewline": true, // Insert final newline
   "files.trimFinalNewlines": true, // Trim final newlines
   "files.trimTrailingWhitespace": true, // Trim trailing whitespace
+  "git.confirmSync": false, // Disable automatic git fetch
   "javascript.suggest.names": false, // Disable suggesting names (e.g. pressing tab on `log` would not do console.log) Reference: https://www.youtube.com/watch?v=-ALLgIoAgcw
-  "javascript.suggest.paths": true, // Enable suggestions for paths in import
   "javascript.updateImportsOnFileMove.enabled": "always", // Automatically update imports
   "scm.defaultViewMode": "tree", // Shows file tree in the source control sidebar tab
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font", // Terminal font
+  "typescript.updateImportsOnFileMove.enabled": "always", // Automatically update imports
   "window.commandCenter": false, // Turns off the editor top section
   "window.nativeTabs": true, // Enables macOS Sierra window tabs
+  "workbench.activityBar.orientation": "vertical", // Editor (Cursor) activity bar on side
   "workbench.colorTheme": "GitHub Dark Default", // Editor color theme
   "workbench.editor.customLabels.patterns": {
     // Custom tab labels for Next.js projects
@@ -81,6 +83,7 @@ Last updated: `2024/12/26`
     "drei",
     "Dribbble",
     "eede",
+    "esac",
     "esbenp",
     "Etags",
     "Farcaster",
@@ -95,6 +98,7 @@ Last updated: `2024/12/26`
     "GLTF",
     "GOCSPX",
     "googleusercontent",
+    "grayscale",
     "Grotesk",
     "gsap",
     "gtin",
@@ -140,6 +144,7 @@ Last updated: `2024/12/26`
     "nprogress",
     "nraptor",
     "nums",
+    "nvim",
     "Okcoin",
     "openpanel",
     "overscroll",
@@ -223,6 +228,7 @@ Last updated: `2024/12/26`
     "watchpack",
     "wicg",
     "yoyo",
+    "zipf",
     "zustand"
   ]
 }
