@@ -124,8 +124,10 @@ Don’t use `prettier.config.js` with Next.js https://prettier.io/docs/en/config
 `tailwind.config.ts`
 
 ```tsx
+import type { Config } from "tailwindcss"
 import {
   borderRadius10 as borderRadius,
+  boxShadow,
   colors,
   fontFamily,
   fontSize10 as fontSize,
@@ -133,7 +135,6 @@ import {
   screens10 as screens,
   spacing10 as spacing,
 } from "@nattui/tailwind-theme-config"
-import type { Config } from "tailwindcss"
 
 const config: Config = {
   content: [
@@ -144,6 +145,7 @@ const config: Config = {
   darkMode: "class",
   theme: {
     borderRadius,
+    boxShadow,
     colors,
     extend: {
       colors: {
