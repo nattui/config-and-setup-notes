@@ -1,3 +1,5 @@
+# Next.js Setup
+
 Last updated: `2024/12/26`
 
 ```bash
