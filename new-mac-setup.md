@@ -41,11 +41,15 @@ brew install --cask shottr
 brew install --cask raindropio
 brew install --cask spotify
 
-# EG Oreo 75 volume
+# Keyboard sounds
+# NK Cream 85 volume
 brew install --cask mechvibes
 
-# install starship
+# install Starship
 brew install starship
+
+# install GitHub CLI
+brew install gh
 
 code ~/.zshrc
 # Documentation: https://starship.rs/#zsh
