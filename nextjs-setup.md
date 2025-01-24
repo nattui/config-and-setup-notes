@@ -27,9 +27,8 @@ Creating a new Next.js app in /Users/snowshift/Documents/github/next-2024-12-24.
 pnpm update && pnpm install
 
 pnpm install @phosphor-icons/react
-pnpm install @radix-ui/colors
 
-pnpm install -D @nattui/tailwind-theme-config
+pnpm install -D @nattui/tailwind-tokenless
 pnpm install -D eslint-config-prettier
 pnpm install -D eslint-plugin-perfectionist
 pnpm install -D eslint-plugin-unicorn
@@ -128,6 +127,81 @@ Don’t use `prettier.config.js` with Next.js https://prettier.io/docs/en/config
 }
 ```
 
+`styles/global.css`
+
+```css
+/* Order matters */
+@import "tailwindcss";
+@import "@nattui/tailwind-tokenless/styles/10/index.css";
+@import "@nattui/tailwind-tokenless/styles/colors/reset.css";
+@import "@nattui/tailwind-tokenless/styles/colors/gray/mauve.css";
+@import "@nattui/tailwind-tokenless/styles/colors/gray/mauve-alpha.css";
+@import "@nattui/tailwind-tokenless/styles/colors/primary/crimson.css";
+
+html {
+  font-size: 10px;
+}
+```
+
+`.vscode/settings.json`
+
+```tsx
+  "tailwindCSS.rootFontSize": 10
+```
+
+---
+
+---
+
+---
+
+---
+
+---
+
+> [!WARNING]
+> Old
+
+`.eslintrc.json` old
+
+```json
+{
+  "extends": [
+    "eslint:recommended",
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/strict",
+    "plugin:@typescript-eslint/stylistic-type-checked",
+    "plugin:perfectionist/recommended-natural-legacy",
+    "plugin:unicorn/all",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
+  },
+  "plugins": ["@typescript-eslint"],
+  "root": true,
+  "rules": {
+    "perfectionist/sort-imports": "off",
+    "semi": "off",
+    "unicorn/no-keyword-prefix": "off",
+    "unicorn/prevent-abbreviations": [
+      "error",
+      {
+        "replacements": {
+          "params": false,
+          "props": false,
+          "ref": false
+        }
+      }
+    ]
+  }
+}
+```
+
+> [!WARNING]
+> Old
+
 `tailwind.config.ts`
 
 ```tsx
@@ -176,57 +250,4 @@ const config: Config = {
 }
 
 export default config
-```
-
-`.vscode/settings.json`
-
-```tsx
-  "tailwindCSS.rootFontSize": 10
-```
-
----
-
----
-
----
-
----
-
----
-
-`.eslintrc.json` Old
-
-```json
-{
-  "extends": [
-    "eslint:recommended",
-    "next/core-web-vitals",
-    "plugin:@typescript-eslint/strict",
-    "plugin:@typescript-eslint/stylistic-type-checked",
-    "plugin:perfectionist/recommended-natural-legacy",
-    "plugin:unicorn/all",
-    "prettier"
-  ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "project": ["./tsconfig.json"]
-  },
-  "plugins": ["@typescript-eslint"],
-  "root": true,
-  "rules": {
-    "perfectionist/sort-imports": "off",
-    "semi": "off",
-    "unicorn/no-keyword-prefix": "off",
-    "unicorn/prevent-abbreviations": [
-      "error",
-      {
-        "replacements": {
-          "params": false,
-          "props": false,
-          "ref": false
-        }
-      }
-    ]
-  }
-}
 ```
