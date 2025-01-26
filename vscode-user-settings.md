@@ -10,7 +10,7 @@ Last updated: `2025/01/21`
   "diffEditor.ignoreTrimWhitespace": false, // Keep whitespace in diffs
   "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" }, // On save, fix all eslint errors
   "editor.defaultFormatter": "esbenp.prettier-vscode", // Prettier extension
-  "editor.fontFamily": "CommitMono", // Editor font
+  "editor.fontFamily": "CommitMono Nerd Font", // Editor font
   "editor.fontSize": 12, // Editor font size
   "editor.formatOnPaste": true, // On paste, format
   "editor.formatOnSave": true, // On save, format
@@ -38,7 +38,7 @@ Last updated: `2025/01/21`
   "javascript.suggest.names": false, // Disable suggesting names (e.g. pressing tab on `log` would not do console.log) Reference: https://www.youtube.com/watch?v=-ALLgIoAgcw
   "javascript.updateImportsOnFileMove.enabled": "always", // Automatically update imports
   "scm.defaultViewMode": "tree", // Shows file tree in the source control sidebar tab
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font", // Terminal font
+  "terminal.integrated.fontFamily": "CommitMono Nerd Font", // Terminal font
   "typescript.updateImportsOnFileMove.enabled": "always", // Automatically update imports
   "window.commandCenter": false, // Turns off the editor top section
   "window.nativeTabs": true, // Enables macOS Sierra window tabs

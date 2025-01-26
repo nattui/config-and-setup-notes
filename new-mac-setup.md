@@ -27,9 +27,9 @@ brew analytics off
 brew install git
 
 # install fonts
-# brew tap homebrew/cask-fonts
-# brew install --cask font-jetbrains-mono-nerd-font
-# brew install --cask font-inter
+brew install --cask font-commit-mono-nerd-font
+brew install --cask font-geist
+brew install --cask font-jetbrains-mono-nerd-font
 
 # install software
 brew install --cask iterm2
