@@ -46,11 +46,17 @@ pnpm install -D prettier-plugin-tailwindcss
 ```json
 "scripts": {
   "build": "next build",
+  "check:format": "prettier --check .",
+  "check:format:fix": "prettier --write .",
+  "check:lint": "next lint",
+  "check:lint:fix": "next lint --fix",
+  "check:type": "tsc --noEmit",
+  "db:generate": "drizzle-kit generate",
+  "db:introspect": "drizzle-kit introspect",
+  "db:migrate": "drizzle-kit migrate",
+  "db:push": "drizzle-kit push",
+  "db:studio": "drizzle-kit studio --verbose",
   "dev": "next dev --port 3000 --turbopack",
-  "format": "prettier --check .",
-  "format:fix": "prettier --write .",
-  "lint": "next lint",
-  "lint:fix": "next lint --fix",
   "start": "next start",
   "update": "pnpx npm-check-updates -u"
 },
