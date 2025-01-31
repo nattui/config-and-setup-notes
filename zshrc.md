@@ -1,6 +1,6 @@
 # Zshrc
 
-Last updated: `2024/12/26`
+Last updated: `2025/01/30`
 
 ```
 # :: Notes ::
