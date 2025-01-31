@@ -26,6 +26,11 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+# nvm
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
 # bun completions
 [ -s "/Users/snowshift/.bun/_bun" ] && source "/Users/snowshift/.bun/_bun"
 
@@ -36,35 +41,41 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # Aliases
 # JS package managers
 alias b="bun"
+alias bb="bun run build"
 alias bbs="bun run build && bun run start"
 alias bd="bun run dev"
 alias bi="bun install"
-alias bb="bun run build"
 alias br="bun run"
 alias bs="bun run start"
 alias bu="bun update"
 alias bx="bunx"
 alias n="npm"
+alias nb="npm run build"
 alias nd="npm run dev"
 alias ni="npm install"
+alias np="npm publish"
 alias nr="npm run"
 alias ns="npm run start"
 alias nu="npm update"
 alias nx="npx"
 alias p="pnpm"
-alias pr="pnpm run"
 alias pb="pnpm run build"
 alias pbs="pnpm run build && pnpm run start"
 alias pd="pnpm run dev"
 alias pi="pnpm install"
 alias pn="pnpm run build && pnpm run start"
-alias pp="pnpm run build && pnpm publish --no-git-checks --access=public"
+alias pp="pnpm run build && pnpm publish --no-git-checks  --access=public"
+alias ppp="pnpm publish --no-git-checks"
+alias pr="pnpm run"
 alias ps="pnpm run start"
 alias pu="pnpm update"
 alias px="pnpx"
+alias y="yarn"
 # Git
 alias g="git"
 alias gc="git clone"
+alias gph="git push"
+alias gpl="git pull"
 # Software
 alias c="cursor"
 # Getting IP address
