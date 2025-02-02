@@ -49,6 +49,7 @@ pnpm install -D postcss@latest
 ```json
 "scripts": {
   "build": "next build",
+  "check": "pnpm check:format && pnpm check:lint",
   "check:fix": "pnpm check:format:fix && pnpm check:lint:fix",
   "check:format": "prettier --check .",
   "check:format:fix": "prettier --write .",
