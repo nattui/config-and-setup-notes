@@ -53,7 +53,6 @@ pnpm install -D postcss@latest
   "check:format:fix": "prettier --write .",
   "check:lint": "next lint",
   "check:lint:fix": "next lint --fix",
-  "check:type": "tsc --noEmit",
   "db:generate": "drizzle-kit generate",
   "db:introspect": "drizzle-kit introspect",
   "db:migrate": "drizzle-kit migrate",
