@@ -42,6 +42,15 @@ pnpm install -D prettier-plugin-tailwindcss
 pnpm install -D @tailwindcss/postcss@latest
 pnpm install -D postcss@latest
 pnpm install -D tailwindcss@latest
+
+# Application
+pnpm install better-auth
+pnpm install drizzle-orm
+pnpm install postgres
+pnpm install radix-ui
+pnpm install zustand
+
+pnpm install -D drizzle-kit
 ```
 
 `package.json`
