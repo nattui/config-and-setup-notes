@@ -39,9 +39,9 @@ pnpm install -D prettier-plugin-packagejson
 pnpm install -D prettier-plugin-sort-json
 pnpm install -D prettier-plugin-tailwindcss
 
-pnpm install -D tailwindcss@latest
 pnpm install -D @tailwindcss/postcss@latest
 pnpm install -D postcss@latest
+pnpm install -D tailwindcss@latest
 ```
 
 `package.json`
