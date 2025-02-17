@@ -1,6 +1,6 @@
 # VSCode User Settings
 
-Last updated: `2025/01/21`
+Last updated: `2025/02/16`
 
 ```jsonc
 {
@@ -29,6 +29,7 @@ Last updated: `2025/01/21`
     "typescriptreact"
   ],
   "explorer.sortOrder": "default", // Default file and folder order
+  "extensions.ignoreRecommendations": true, // Ignore recommendations extensions
   "files.associations": { "*.css": "tailwindcss" }, // Fixes `Unknown at rule @tailwindpostcss(unknownAtRules)`
   "files.eol": "\n", // Default EOL
   "files.insertFinalNewline": true, // Insert final newline
@@ -39,6 +40,7 @@ Last updated: `2025/01/21`
   "javascript.updateImportsOnFileMove.enabled": "always", // Automatically update imports
   "scm.defaultViewMode": "tree", // Shows file tree in the source control sidebar tab
   "terminal.integrated.fontFamily": "CommitMono Nerd Font", // Terminal font
+  "typescript.preferences.importModuleSpecifier": "non-relative", // Prefers a non-relative import based
   "typescript.updateImportsOnFileMove.enabled": "always", // Automatically update imports
   "window.commandCenter": false, // Turns off the editor top section
   "window.nativeTabs": true, // Enables macOS Sierra window tabs
@@ -50,6 +52,7 @@ Last updated: `2025/01/21`
     "**/app/**/layout.tsx": "${dirname}/${filename}" // layout.tsx, page.tsx, template.tsx
   },
   "workbench.iconTheme": "material-icon-theme", // Editor file icon theme
+  "workbench.productIconTheme": "fluent-icons", // Editor product icon theme
   //
   //
   //
@@ -59,6 +62,7 @@ Last updated: `2025/01/21`
   "cSpell.userWords": [
     "Adblockers",
     "Apaz",
+    "Asar",
     "autodocs",
     "autofetch",
     "autoincrement",
@@ -74,6 +78,7 @@ Last updated: `2025/01/21`
     "bunx",
     "caniuse",
     "cdpath",
+    "cdylib",
     "Cgxq",
     "chpt",
     "clsx",
@@ -90,12 +95,14 @@ Last updated: `2025/01/21`
     "dbaeumer",
     "doikdnkglb",
     "domhandler",
+    "dotenv",
     "drei",
     "Dribbble",
     "editorjs",
     "eede",
     "esac",
     "esbenp",
+    "eslintcache",
     "Etags",
     "Farcaster",
     "fastify",
@@ -111,6 +118,7 @@ Last updated: `2025/01/21`
     "GOCSPX",
     "googleusercontent",
     "grayscale",
+    "groq",
     "Grotesk",
     "gsap",
     "gtin",
@@ -122,16 +130,23 @@ Last updated: `2025/01/21`
     "Highcharts",
     "hono",
     "hookform",
+    "icns",
     "iconify",
     "iframes",
     "ignorecase",
+    "isbot",
+    "iterm",
     "ivjn",
     "jagplbtsj",
     "Jefit",
     "jetbrains",
+    "jscoverage",
+    "jspm",
     "jsrsasign",
     "jsxs",
     "kibibytes",
+    "killall",
+    "KINDE",
     "kleur",
     "konva",
     "ldrs",
@@ -143,6 +158,7 @@ Last updated: `2025/01/21`
     "mapbox",
     "mapboxgl",
     "mdxts",
+    "mechvibes",
     "Monokai",
     "Natt",
     "nattui",
@@ -151,6 +167,7 @@ Last updated: `2025/01/21`
     "nextjs",
     "nftychat",
     "NGKD",
+    "njsproj",
     "nodelib",
     "nomodule",
     "nord",
@@ -158,17 +175,22 @@ Last updated: `2025/01/21`
     "npath",
     "nprogress",
     "nraptor",
+    "ntvs",
     "nums",
+    "nuxt",
     "nvim",
     "Okcoin",
+    "oklch",
     "openpanel",
     "overscroll",
     "pageview",
     "Palo",
     "papaparse",
     "paralleldrive",
+    "payloadcms",
     "photoeditorsdk",
     "picocolors",
+    "pids",
     "Pirsch",
     "pirschjs",
     "pixrem",
@@ -192,24 +214,31 @@ Last updated: `2025/01/21`
     "pslgjhh",
     "querybuilder",
     "QVAHLYopgx",
+    "raindropio",
     "reactflow",
     "Rebond",
     "recma",
+    "REFF",
     "registrator",
     "rehype",
     "Reimagining",
     "relocator",
     "resizer",
+    "rgba",
     "rideshare",
+    "rlib",
     "roadmaps",
+    "rodio",
     "roseville",
     "rsbuild",
     "RZABFA",
     "seedrandom",
     "sema",
+    "serde",
     "shadcn",
     "shiki",
     "shikijs",
+    "shottr",
     "signin",
     "signout",
     "signup",
@@ -217,6 +246,7 @@ Last updated: `2025/01/21`
     "snowshift",
     "sonner",
     "sslmode",
+    "staticlib",
     "statsig",
     "stylelint",
     "stylelintrc",
@@ -227,9 +257,11 @@ Last updated: `2025/01/21`
     "tailwindcss",
     "tailwindpostcss",
     "tanstack",
+    "tauri",
     "testheadless",
     "testonly",
     "todos",
+    "tokenless",
     "Topbar",
     "trivago",
     "trunc",
@@ -247,11 +279,15 @@ Last updated: `2025/01/21`
     "vercel",
     "vercelignore",
     "versionlens",
+    "vinxi",
+    "vite",
+    "vuepress",
     "Waitlist",
     "watchpack",
     "wavesurfer",
     "WCAG",
     "wicg",
+    "wscript",
     "yoyo",
     "zipf",
     "zustand"
