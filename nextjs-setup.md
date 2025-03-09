@@ -66,6 +66,7 @@ pnpm install -D drizzle-kit
   "db:push": "drizzle-kit push",
   "db:studio": "drizzle-kit studio --verbose",
   "dev": "next dev --port 3000 --turbopack",
+  "docker": "pnpm docker:build && pnpm docker:run",
   "docker:build": "docker build --tag next-docker .",
   "docker:run": "docker run --publish 3000:3000 next-docker",
   "start": "next start",
