@@ -54,18 +54,20 @@ pnpm install -D drizzle-kit
 ```json
 "scripts": {
   "build": "next build",
-  "check": "pnpm check:format && pnpm check:lint",
   "check:fix": "pnpm check:format:fix && pnpm check:lint:fix",
-  "check:format": "prettier --check .",
   "check:format:fix": "prettier --write .",
-  "check:lint": "next lint",
+  "check:format": "prettier --check .",
   "check:lint:fix": "next lint --fix",
+  "check:lint": "next lint",
+  "check": "pnpm check:format && pnpm check:lint",
   "db:generate": "drizzle-kit generate --config=drizzle.config.ts",
   "db:introspect": "drizzle-kit introspect --config=drizzle.config.ts",
   "db:migrate": "drizzle-kit migrate --config=drizzle.config.ts",
   "db:push": "drizzle-kit push --config=drizzle.config.ts",
   "db:studio": "drizzle-kit studio --config=drizzle.config.ts --verbose",
   "dev": "next dev --port 3000 --turbopack",
+  "docker:build": "docker build -t nextjs-docker .",
+  "docker:run": "docker run -p 3000:3000 nextjs-docker",
   "start": "next start",
   "update": "pnpx npm-check-updates -u"
 },
