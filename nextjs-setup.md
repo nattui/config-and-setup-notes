@@ -66,8 +66,8 @@ pnpm install -D drizzle-kit
   "db:push": "drizzle-kit push",
   "db:studio": "drizzle-kit studio --verbose",
   "dev": "next dev --port 3000 --turbopack",
-  "docker:build": "docker build --tag nextjs-docker .",
-  "docker:run": "docker run --publish 3000:3000 nextjs-docker",
+  "docker:build": "docker build --tag next-docker .",
+  "docker:run": "docker run --publish 3000:3000 next-docker",
   "start": "next start",
   "update": "pnpx npm-check-updates --upgrade"
 },
