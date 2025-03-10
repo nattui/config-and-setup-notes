@@ -25,6 +25,7 @@ brew analytics off
 
 # Must-haves
 brew install git
+brew install node
 
 # install fonts
 brew install --cask font-commit-mono-nerd-font
