@@ -27,6 +27,12 @@ brew analytics off
 brew install git
 brew install node
 
+# npm
+npm install --global corepack@latest
+corepack enable pnpm
+
+npm install -g bun
+
 # install fonts
 brew install --cask font-commit-mono-nerd-font
 brew install --cask font-geist
