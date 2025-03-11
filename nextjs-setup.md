@@ -90,11 +90,9 @@ const __dirname = dirname(__filename)
 const compat = new FlatCompat({ baseDirectory: __dirname })
 
 const eslintConfig = [
-  ...compat.config({
-    extends: ["next/core-web-vitals", "next/typescript"],
-  }),
+  ...compat.extends("next/core-web-vitals", "next/typescript"),
   perfectionist.configs["recommended-natural"],
-  unicorn.configs["flat/all"],
+  unicorn.configs["all"],
   {
     plugins: {
       "unused-imports": unusedImports,
