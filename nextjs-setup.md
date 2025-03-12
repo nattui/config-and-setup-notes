@@ -1,9 +1,9 @@
 # Next.js Setup
 
-Last updated: `2024/12/26`
+Last updated: `2025/03/12`
 
 ```bash
-pnpx create-next-app@latest
+npx create-next-app@latest
 
 Progress: resolved 1, reused 0, downloaded 1, added 1, done
 ✔ What is your project named? … next-2024-12-24
@@ -24,29 +24,29 @@ Creating a new Next.js app in /Users/snowshift/Documents/github/next-2024-12-24.
 
 # Remove name, version, private
 
-pnpm update && pnpm install
+npm update && npm install
 
-# pnpm install @phosphor-icons/react
-pnpm install lucide-react
-pnpm install @nattui/tailwind-tokenless
+# npm install @phosphor-icons/react
+npm install lucide-react
+npm install @nattui/tailwind-tokenless
 
-pnpm install -D eslint-plugin-perfectionist
-pnpm install -D eslint-plugin-unicorn
-pnpm install -D eslint-plugin-unused-imports
-pnpm install -D prettier
-pnpm install -D prettier-plugin-css-order
-pnpm install -D prettier-plugin-packagejson
-pnpm install -D prettier-plugin-sort-json
-pnpm install -D prettier-plugin-tailwindcss
+npm install -D eslint-plugin-perfectionist
+npm install -D eslint-plugin-unicorn
+npm install -D eslint-plugin-unused-imports
+npm install -D prettier
+npm install -D prettier-plugin-css-order
+npm install -D prettier-plugin-packagejson
+npm install -D prettier-plugin-sort-json
+npm install -D prettier-plugin-tailwindcss
 
 # Application
-pnpm install better-auth
-pnpm install drizzle-orm
-pnpm install postgres
-pnpm install radix-ui
-pnpm install zustand
+npm install better-auth
+npm install drizzle-orm
+npm install postgres
+npm install radix-ui
+npm install zustand
 
-pnpm install -D drizzle-kit
+npm install -D drizzle-kit
 ```
 
 `package.json`
@@ -54,23 +54,23 @@ pnpm install -D drizzle-kit
 ```json
 "scripts": {
   "build": "next build",
-  "check": "pnpx npm-run-all --parallel check:format check:lint",
-  "check:fix": "pnpx npm-run-all --parallel check:format:fix check:lint:fix",
+  "check": "npm run check:format && npm run check:lint",
+  "check:fix": "npm run check:format:fix && npm run check:lint:fix",
   "check:format": "prettier --check .",
   "check:format:fix": "prettier --write .",
   "check:lint": "next lint",
   "check:lint:fix": "next lint --fix",
-  "db:generate": "drizzle-kit generate",
-  "db:introspect": "drizzle-kit introspect",
-  "db:migrate": "drizzle-kit migrate",
-  "db:push": "drizzle-kit push",
-  "db:studio": "drizzle-kit studio --verbose",
-  "dev": "next dev --port 3000 --turbopack",
+  "db:generate": "drizzle-kit generate --config=drizzle.config.ts",
+  "db:introspect": "drizzle-kit introspect --config=drizzle.config.ts",
+  "db:migrate": "drizzle-kit migrate --config=drizzle.config.ts",
+  "db:push": "drizzle-kit push --config=drizzle.config.ts",
+  "db:studio": "drizzle-kit studio --config=drizzle.config.ts --verbose",
+  "dev": "next dev --port 3001 --turbopack",
   "docker": "pnpm docker:build && pnpm docker:run",
   "docker:build": "docker build --tag next-docker .",
-  "docker:run": "docker run --publish 3000:3000 next-docker",
-  "start": "next start",
-  "update": "pnpx npm-check-updates --upgrade"
+  "docker:run": "docker run --publish 3001:3001 next-docker",
+  "start": "next start --port 3001",
+  "update": "npx npm-check-updates -u"
 },
 ```
 
