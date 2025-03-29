@@ -54,8 +54,8 @@ npm install -D drizzle-kit
 ```json
 "scripts": {
   "build": "next build",
-  "check": "npm run check:format && npm run check:lint",
-  "check:fix": "npm run check:format:fix && npm run check:lint:fix",
+  "check": "pnpx npm-run-all --parallel check:format check:lint",
+  "check:fix": "pnpx npm-run-all --parallel check:format:fix check:lint:fix",
   "check:format": "prettier --check .",
   "check:format:fix": "prettier --write .",
   "check:lint": "next lint",
@@ -70,7 +70,7 @@ npm install -D drizzle-kit
   "docker:build": "docker build --tag next-docker .",
   "docker:run": "docker run --publish 3001:3001 next-docker",
   "start": "next start --port 3001",
-  "update": "npx npm-check-updates -u"
+  "update": "pnpx npm-check-updates --upgrade"
 },
 ```
 
