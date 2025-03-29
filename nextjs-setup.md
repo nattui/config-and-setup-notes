@@ -1,6 +1,6 @@
 # Next.js Setup
 
-Last updated: `2025/03/12`
+Last updated: `2025/03/29`
 
 ```bash
 npx create-next-app@latest
