@@ -1,9 +1,9 @@
 # Next.js Setup
 
-Last updated: `2025/03/29`
+Last updated: `2025/04/05`
 
 ```bash
-npx create-next-app@latest
+pnpx create-next-app@latest
 
 Progress: resolved 1, reused 0, downloaded 1, added 1, done
 ✔ What is your project named? … next-2024-12-24
