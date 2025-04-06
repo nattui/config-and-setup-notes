@@ -1,12 +1,14 @@
 # VSCode User Settings
 
-Last updated: `2025/02/16`
+Last updated: `2025/04/06`
 
 ```jsonc
 {
   "accessibility.signalOptions.volume": 25, // Volume level for accessibility sound signals
   "accessibility.signals.format": { "sound": "always" }, // Makes a sound on format
   "accessibility.signals.save": { "sound": "always" }, // Makes a sound on save
+  "cursor.composer.shouldChimeAfterChatFinishes": true, // Play a sound when a chat response is completed
+  "diffEditor.hideUnchangedRegions.enabled": true, // Shows unchanged regions
   "diffEditor.ignoreTrimWhitespace": false, // Keep whitespace in diffs
   "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" }, // On save, fix all eslint errors
   "editor.defaultFormatter": "esbenp.prettier-vscode", // Prettier extension
@@ -35,7 +37,10 @@ Last updated: `2025/02/16`
   "files.insertFinalNewline": true, // Insert final newline
   "files.trimFinalNewlines": true, // Trim final newlines
   "files.trimTrailingWhitespace": true, // Trim trailing whitespace
+  "git.autofetch": true, // Commits will automatically be fetched
+  "git.autofetchPeriod": 180, // Duration in seconds between each automatic git fetch
   "git.confirmSync": false, // Disable automatic git fetch
+  "git.enableSmartCommit": true, // Commit all changes when there are no staged changes
   "javascript.suggest.names": false, // Disable suggesting names (e.g. pressing tab on `log` would not do console.log) Reference: https://www.youtube.com/watch?v=-ALLgIoAgcw
   "javascript.updateImportsOnFileMove.enabled": "always", // Automatically update imports
   "scm.defaultViewMode": "tree", // Shows file tree in the source control sidebar tab
@@ -45,7 +50,7 @@ Last updated: `2025/02/16`
   "window.commandCenter": false, // Turns off the editor top section
   "window.nativeTabs": true, // Enables macOS Sierra window tabs
   "workbench.activityBar.orientation": "vertical", // Editor (Cursor) activity bar on side
-  "workbench.colorTheme": "GitHub Dark Default", // Editor color theme
+  "workbench.colorTheme": "Cute", // Editor color theme
   "workbench.editor.customLabels.patterns": {
     // Custom tab labels for Next.js projects
     "**/app/**/page.tsx": "${dirname}/${filename}", // route.ts
@@ -61,6 +66,8 @@ Last updated: `2025/02/16`
   "cSpell.ignorePaths": ["node_modules", "package-lock.json", "pnpm-lock.yaml"],
   "cSpell.userWords": [
     "Adblockers",
+    "addgroup",
+    "adduser",
     "Apaz",
     "Asar",
     "autodocs",
@@ -93,6 +100,7 @@ Last updated: `2025/02/16`
     "crunker",
     "datetime",
     "dbaeumer",
+    "devsafe",
     "doikdnkglb",
     "domhandler",
     "dotenv",
@@ -100,6 +108,7 @@ Last updated: `2025/02/16`
     "Dribbble",
     "editorjs",
     "eede",
+    "elif",
     "esac",
     "esbenp",
     "eslintcache",
@@ -134,6 +143,7 @@ Last updated: `2025/02/16`
     "iconify",
     "iframes",
     "ignorecase",
+    "importmap",
     "isbot",
     "iterm",
     "ivjn",
@@ -151,6 +161,7 @@ Last updated: `2025/02/16`
     "konva",
     "ldrs",
     "libass",
+    "libc",
     "lockb",
     "Logomark",
     "lucide",
@@ -248,6 +259,7 @@ Last updated: `2025/02/16`
     "sslmode",
     "staticlib",
     "statsig",
+    "stega",
     "stylelint",
     "stylelintrc",
     "stylesheet",
@@ -274,6 +286,7 @@ Last updated: `2025/02/16`
     "uiball",
     "umami",
     "unfetch",
+    "uploadthing",
     "uuidv",
     "valibot",
     "vercel",
