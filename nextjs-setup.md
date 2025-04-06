@@ -40,11 +40,12 @@ pnpm install -D prettier-plugin-sort-json
 pnpm install -D prettier-plugin-tailwindcss
 
 # Application
-pnpm install jose
-pnpm install zod
+pnpm install bcryptjs
 pnpm install drizzle-orm
+pnpm install jose
 pnpm install postgres
 pnpm install radix-ui
+pnpm install zod
 pnpm install zustand
 
 pnpm install -D drizzle-kit
