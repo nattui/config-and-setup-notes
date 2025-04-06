@@ -40,7 +40,6 @@ pnpm install -D prettier-plugin-sort-json
 pnpm install -D prettier-plugin-tailwindcss
 
 # Application
-pnpm install better-auth
 pnpm install drizzle-orm
 pnpm install postgres
 pnpm install radix-ui
