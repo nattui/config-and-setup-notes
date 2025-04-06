@@ -41,6 +41,7 @@ pnpm install -D prettier-plugin-tailwindcss
 
 # Application
 pnpm install jose
+pnpm install zod
 pnpm install drizzle-orm
 pnpm install postgres
 pnpm install radix-ui
