@@ -24,29 +24,29 @@ Creating a new Next.js app in /Users/snowshift/Documents/github/next-2024-12-24.
 
 # Remove name, version, private
 
-npm update && npm install
+pnpm update && pnpm install
 
-# npm install @phosphor-icons/react
-npm install lucide-react
-npm install @nattui/tailwind-tokenless
+# pnpm install @phosphor-icons/react
+pnpm install lucide-react
+pnpm install @nattui/tailwind-tokenless
 
-npm install -D eslint-plugin-perfectionist
-npm install -D eslint-plugin-unicorn
-npm install -D eslint-plugin-unused-imports
-npm install -D prettier
-npm install -D prettier-plugin-css-order
-npm install -D prettier-plugin-packagejson
-npm install -D prettier-plugin-sort-json
-npm install -D prettier-plugin-tailwindcss
+pnpm install -D eslint-plugin-perfectionist
+pnpm install -D eslint-plugin-unicorn
+pnpm install -D eslint-plugin-unused-imports
+pnpm install -D prettier
+pnpm install -D prettier-plugin-css-order
+pnpm install -D prettier-plugin-packagejson
+pnpm install -D prettier-plugin-sort-json
+pnpm install -D prettier-plugin-tailwindcss
 
 # Application
-npm install better-auth
-npm install drizzle-orm
-npm install postgres
-npm install radix-ui
-npm install zustand
+pnpm install better-auth
+pnpm install drizzle-orm
+pnpm install postgres
+pnpm install radix-ui
+pnpm install zustand
 
-npm install -D drizzle-kit
+pnpm install -D drizzle-kit
 ```
 
 `package.json`
