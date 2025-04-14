@@ -119,6 +119,7 @@ const eslintConfig = [
       "unicorn/no-keyword-prefix": "off",
       "unicorn/no-unused-properties": "warn",
       "unicorn/prevent-abbreviations": "off",
+      "unused-imports/no-unused-imports": "error",
     },
   },
 ]
