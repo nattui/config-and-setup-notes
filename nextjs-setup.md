@@ -117,8 +117,8 @@ const eslintConfig = [
       "unicorn/consistent-function-scoping": "off",
       "unicorn/import-style": "off",
       "unicorn/no-keyword-prefix": "off",
+      "unicorn/no-unused-properties": "warn",
       "unicorn/prevent-abbreviations": "off",
-      "unused-imports/no-unused-imports": "error",
     },
   },
 ]
