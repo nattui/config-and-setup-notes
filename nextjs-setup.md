@@ -55,7 +55,7 @@ pnpm install -D drizzle-kit
 
 ```json
 "scripts": {
-  "build": "next build",
+  "build": "next build --turbopack",
   "check": "pnpx npm-run-all --parallel check:format check:lint",
   "check:fix": "pnpx npm-run-all --parallel check:format:fix check:lint:fix",
   "check:format": "prettier --check .",
@@ -71,7 +71,7 @@ pnpm install -D drizzle-kit
   "docker": "pnpm docker:build && pnpm docker:run",
   "docker:build": "docker build --tag next-docker .",
   "docker:run": "docker run --publish 3001:3001 next-docker",
-  "start": "next start --port 3001",
+  "start": "next start --port 3001 --turbopack",
   "update": "pnpx npm-check-updates --upgrade"
 },
 ```
