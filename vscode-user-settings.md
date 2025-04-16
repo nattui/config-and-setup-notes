@@ -45,7 +45,7 @@ Last updated: `2025/04/06`
   "javascript.updateImportsOnFileMove.enabled": "always", // Automatically update imports
   "scm.defaultViewMode": "tree", // Shows file tree in the source control sidebar tab
   "terminal.integrated.fontFamily": "CommitMono Nerd Font", // Terminal font
-  "typescript.preferences.autoImportFileExcludePatterns": ["lucide-react"], // Change the autocompletion
+  "typescript.preferences.autoImportFileExcludePatterns": ["lucide-react"], // Change the autocompletion Reference: https://lucide.dev/guide/advanced/aliased-names#choosing-import-name-style
   "typescript.preferences.importModuleSpecifier": "non-relative", // Prefers a non-relative import based
   "typescript.updateImportsOnFileMove.enabled": "always", // Automatically update imports
   "window.commandCenter": false, // Turns off the editor top section
