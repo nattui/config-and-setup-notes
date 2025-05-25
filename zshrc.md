@@ -1,6 +1,6 @@
 # Zshrc
 
-Last updated: `2025/01/30`
+Last updated: `2025/05/25`
 
 ```
 # :: Notes ::
@@ -59,25 +59,28 @@ alias ns="npm run start"
 alias nu="npm update"
 alias nx="npx"
 alias p="pnpm"
+alias pa="pnpm add"
 alias pb="pnpm run build"
 alias pbs="pnpm run build && pnpm run start"
 alias pd="pnpm run dev"
 alias pi="pnpm install"
 alias pn="pnpm run build && pnpm run start"
-alias pp="pnpm run build && pnpm publish --no-git-checks  --access=public"
-alias ppp="pnpm publish --no-git-checks"
+alias pp="pnpm run build && pnpm publish --no-git-checks --access=public"
 alias pr="pnpm run"
 alias ps="pnpm run start"
 alias pu="pnpm update"
 alias px="pnpx"
-alias y="yarn"
 # Git
 alias g="git"
 alias gc="git clone"
 alias gph="git push"
 alias gpl="git pull"
+# Database
+alias dbm="pnpm run db:migrate"
+alias dbp="pnpm run db:push"
+alias dbs="pnpm run db:studio"
 # Software
-alias c="cursor"
+alias c="cursor ."
 # Getting IP address
 alias i="ipconfig getifaddr en0"
 alias ip="ipconfig getifaddr en0"
