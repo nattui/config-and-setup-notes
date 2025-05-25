@@ -1,6 +1,6 @@
 # Next.js Setup
 
-Last updated: `2025/04/05`
+Last updated: `2025/05/25`
 
 ```bash
 pnpx create-next-app@latest
@@ -49,6 +49,14 @@ pnpm install zod
 pnpm install zustand
 
 pnpm install -D drizzle-kit
+```
+
+Due to a bug with the way the default setting for pnpm handles peer dependencies in version 10+
+Reference: https://github.com/vercel/next.js/issues/78813
+
+```bash
+pnpm add -D @next/eslint-plugin-next
+pnpm add -D eslint-plugin-react-hooks
 ```
 
 `package.json`
