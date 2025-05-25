@@ -52,7 +52,7 @@ pnpm install -D drizzle-kit
 ```
 
 Due to a bug with the way the default setting for pnpm handles peer dependencies in version 10+
-Reference: https://github.com/vercel/next.js/issues/78813
+Reference: https://github.com/vercel/next.js/issues/78813#issuecomment-2908051088
 
 ```yaml
 # pnpm-workspace.yaml
