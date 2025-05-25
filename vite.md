@@ -1,3 +1,5 @@
+Last updated: `2025/02/15`
+
 `eslint.config.js`
 
 ```js
