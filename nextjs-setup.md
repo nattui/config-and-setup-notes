@@ -54,6 +54,15 @@ pnpm install -D drizzle-kit
 Due to a bug with the way the default setting for pnpm handles peer dependencies in version 10+
 Reference: https://github.com/vercel/next.js/issues/78813
 
+```yaml
+# pnpm-workspace.yaml
+publicHoistPattern:
+  - "@next/eslint-plugin-next"
+  - "eslint-plugin-react-hooks"
+```
+
+or
+
 ```bash
 pnpm add -D @next/eslint-plugin-next
 pnpm add -D eslint-plugin-react-hooks
