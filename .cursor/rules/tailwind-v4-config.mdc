@@ -1,0 +1,147 @@
+---
+description:
+globs: *.tsx
+alwaysApply: false
+---
+# Tailwind CSS v4 Configuration Guide
+
+## Version and Root Configuration
+- **Tailwind Version**: v4
+- **Root Font Size**: 10px (1rem = 10px)
+- This means all rem-based spacing values are calculated with 10px as the base unit
+
+## Custom Spacing Scale
+The project uses a custom spacing scale defined in the `@theme` configuration. All spacing values are based on a 10px root size:
+
+### Spacing Values Reference
+```css
+@theme {
+  --spacing-*: initial;
+  --spacing-0: 0rem;      /* 0px */
+  --spacing-1: 0.1rem;    /* 1px */
+  --spacing-2: 0.2rem;    /* 2px */
+  --spacing-4: 0.4rem;    /* 4px */
+  --spacing-6: 0.6rem;    /* 6px */
+  --spacing-8: 0.8rem;    /* 8px */
+  --spacing-10: 1rem;     /* 10px */
+  --spacing-12: 1.2rem;   /* 12px */
+  --spacing-14: 1.4rem;   /* 14px */
+  --spacing-16: 1.6rem;   /* 16px */
+  --spacing-20: 2rem;     /* 20px */
+  --spacing-24: 2.4rem;   /* 24px */
+  --spacing-28: 2.8rem;   /* 28px */
+  --spacing-32: 3.2rem;   /* 32px */
+  --spacing-36: 3.6rem;   /* 36px */
+  --spacing-40: 4rem;     /* 40px */
+  --spacing-44: 4.4rem;   /* 44px */
+  --spacing-48: 4.8rem;   /* 48px */
+  --spacing-56: 5.6rem;   /* 56px */
+  --spacing-64: 6.4rem;   /* 64px */
+  --spacing-80: 8rem;     /* 80px */
+  --spacing-96: 9.6rem;   /* 96px */
+  --spacing-112: 11.2rem; /* 112px */
+  --spacing-128: 12.8rem; /* 128px */
+  --spacing-144: 14.4rem; /* 144px */
+  --spacing-160: 16rem;   /* 160px */
+  --spacing-176: 17.6rem; /* 176px */
+  --spacing-192: 19.2rem; /* 192px */
+  --spacing-208: 20.8rem; /* 208px */
+  --spacing-224: 22.4rem; /* 224px */
+  --spacing-240: 24rem;   /* 240px */
+  --spacing-256: 25.6rem; /* 256px */
+  --spacing-288: 28.8rem; /* 288px */
+  --spacing-320: 32rem;   /* 320px */
+  --spacing-384: 38.4rem; /* 384px */
+}
+```
+
+## Custom Text Size Scale
+The project also uses a custom text size scale with precise font size control:
+
+### Text Size Values Reference
+```css
+@theme {
+  --text-*: initial;
+  --text-12: 1.2rem;   /* 12px */
+  --text-14: 1.4rem;   /* 14px */
+  --text-16: 1.6rem;   /* 16px */
+  --text-18: 1.8rem;   /* 18px */
+  --text-20: 2rem;     /* 20px */
+  --text-24: 2.4rem;   /* 24px */
+  --text-30: 3rem;     /* 30px */
+  --text-36: 3.6rem;   /* 36px */
+  --text-48: 4.8rem;   /* 48px */
+  --text-60: 6rem;     /* 60px */
+  --text-72: 7.2rem;   /* 72px */
+  --text-96: 9.6rem;   /* 96px */
+  --text-128: 12.8rem; /* 128px */
+
+  /* Custom intermediate sizes */
+  --text-13: 1.3rem;   /* 13px */
+  --text-15: 1.5rem;   /* 15px */
+}
+```
+
+## Usage Guidelines
+
+### Available Spacing Classes
+With this configuration, you can use the following Tailwind spacing classes:
+- `p-{value}`, `px-{value}`, `py-{value}`, `pt-{value}`, `pr-{value}`, `pb-{value}`, `pl-{value}` for padding
+- `m-{value}`, `mx-{value}`, `my-{value}`, `mt-{value}`, `mr-{value}`, `mb-{value}`, `ml-{value}` for margin
+- `gap-{value}`, `gap-x-{value}`, `gap-y-{value}` for flexbox/grid gaps
+- `space-x-{value}`, `space-y-{value}` for space between elements
+- `w-{value}`, `h-{value}` for width and height
+- `top-{value}`, `right-{value}`, `bottom-{value}`, `left-{value}` for positioning
+- `inset-{value}`, `inset-x-{value}`, `inset-y-{value}` for inset positioning
+
+### Available Text Size Classes
+With the custom text size configuration, you can use:
+- `text-{value}` for font sizes (e.g., `text-12`, `text-14`, `text-16`, etc.)
+- All values from `12` to `128`, plus custom intermediate sizes `13` and `15`
+
+### Common Spacing Patterns
+- **Small spacing**: Use `1`, `2`, `4`, `6`, `8` for fine adjustments
+- **Medium spacing**: Use `10`, `12`, `14`, `16`, `20`, `24` for standard component spacing
+- **Large spacing**: Use `32`, `40`, `48`, `64` for section spacing
+- **Extra large spacing**: Use `80`, `96`, `128`, `160` for layout spacing
+
+### Common Text Size Patterns
+- **Small text**: Use `text-12`, `text-13`, `text-14` for captions, labels, and fine print
+- **Body text**: Use `text-15`, `text-16`, `text-18` for regular content and paragraphs
+- **Headings**: Use `text-20`, `text-24`, `text-30`, `text-36` for section headings
+- **Large headings**: Use `text-48`, `text-60`, `text-72` for page titles and hero text
+- **Display text**: Use `text-96`, `text-128` for large decorative or hero text
+
+### Examples
+```html
+<!-- Small button with custom text size -->
+<button class="px-12 py-6 text-14">Button</button>
+
+<!-- Card with medium spacing and body text -->
+<div class="p-24 m-16">
+  <h3 class="text-24 mb-12">Card Title</h3>
+  <p class="text-16">Card content with readable body text</p>
+</div>
+
+<!-- Section with large spacing and heading hierarchy -->
+<section class="py-80 px-40">
+  <h1 class="text-72 mb-24">Hero Title</h1>
+  <h2 class="text-36 mb-16">Section Heading</h2>
+  <p class="text-18">Section content with larger body text</p>
+</section>
+
+<!-- Grid with custom gap and varied text sizes -->
+<div class="grid gap-20">
+  <div class="text-13">Small caption text</div>
+  <div class="text-15">Custom intermediate size</div>
+  <div class="text-20">Heading text</div>
+</div>
+```
+
+## Important Notes
+- All spacing and text size values are based on the 10px root size (1rem = 10px)
+- The spacing scale is designed for precise control with smaller increments
+- Text sizes include custom intermediate values (13px and 15px) for fine typography control
+- Use the pixel equivalents in comments above for reference when designing
+- These custom scales override Tailwind's default spacing and text size systems
+- Both spacing and text size scales follow the same 10px base unit for consistency
