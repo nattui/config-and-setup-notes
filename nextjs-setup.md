@@ -66,8 +66,8 @@ publicHoistPattern:
 ```json
 "scripts": {
   "build": "next build --turbopack",
-  "check": "pnpx npm-run-all --parallel check:format check:lint",
-  "check:fix": "pnpx npm-run-all --parallel check:format:fix check:lint:fix",
+  "check": "pnpm check:format && pnpm check:lint",
+  "check:fix": "pnpm check:format:fix && pnpm check:lint:fix",
   "check:format": "prettier --check .",
   "check:format:fix": "prettier --write .",
   "check:lint": "next lint",
