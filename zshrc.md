@@ -1,8 +1,8 @@
 # Zshrc
 
-Last updated: `2025/05/25`
+Last updated: `2025/06/15`
 
-```
+```bash
 # :: Notes ::
 # Remember to add this
 # git config --global core.ignorecase false
@@ -80,6 +80,7 @@ alias dbm="pnpm run db:migrate"
 alias dbp="pnpm run db:push"
 alias dbs="pnpm run db:studio"
 # Software
+alias c.="cursor ."
 alias c="cursor ."
 # Getting IP address
 alias i="ipconfig getifaddr en0"
