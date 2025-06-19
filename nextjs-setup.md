@@ -1,6 +1,6 @@
 # Next.js Setup
 
-Last updated: `2025/05/25`
+Last updated: `2025/06/19`
 
 ```bash
 pnpx create-next-app@latest
@@ -149,6 +149,7 @@ Don’t use `prettier.config.js` with Next.js https://prettier.io/docs/en/config
 
 ```json
 {
+  "cssDeclarationSorterOrder": "alphabetical",
   "jsonRecursiveSort": true,
   "plugins": [
     "prettier-plugin-css-order",
