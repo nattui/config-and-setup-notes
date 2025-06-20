@@ -27,8 +27,9 @@ Creating a new Next.js app in /Users/snowshift/Documents/github/next-2024-12-24.
 pnpm update && pnpm install
 
 # pnpm install @phosphor-icons/react
-pnpm install lucide-react
+pnpm install @nattui/react-components
 pnpm install @nattui/tailwind-tokenless
+pnpm install lucide-react
 
 pnpm install -D eslint-plugin-perfectionist
 pnpm install -D eslint-plugin-unicorn
