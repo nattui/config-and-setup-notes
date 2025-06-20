@@ -1,6 +1,6 @@
 # Next.js Setup
 
-Last updated: `2025/06/19`
+Last updated: `2025/06/20`
 
 ```bash
 pnpx create-next-app@latest
@@ -91,9 +91,9 @@ publicHoistPattern:
 
 ```jsx
 import { FlatCompat } from "@eslint/eslintrc"
-import perfectionist from "eslint-plugin-perfectionist"
-import unicorn from "eslint-plugin-unicorn"
-import unusedImports from "eslint-plugin-unused-imports"
+import pluginPerfectionist from "eslint-plugin-perfectionist"
+import pluginUnicorn from "eslint-plugin-unicorn"
+import pluginUnusedImports from "eslint-plugin-unused-imports"
 import { dirname } from "node:path"
 import { fileURLToPath } from "node:url"
 
@@ -104,11 +104,11 @@ const compat = new FlatCompat({ baseDirectory: __dirname })
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
-  perfectionist.configs["recommended-natural"],
-  unicorn.configs["all"],
+  pluginPerfectionist.configs["recommended-natural"],
+  pluginUnicorn.configs["all"],
   {
     plugins: {
-      "unused-imports": unusedImports,
+      "unused-imports": pluginUnusedImports,
     },
     rules: {
       "@next/next/no-img-element": "off",
@@ -129,6 +129,7 @@ const eslintConfig = [
       "unicorn/import-style": "off",
       "unicorn/no-keyword-prefix": "off",
       "unicorn/no-unused-properties": "warn",
+      "unicorn/prefer-import-meta-properties": "off",
       "unicorn/prevent-abbreviations": "off",
       "unused-imports/no-unused-imports": "error",
     },
