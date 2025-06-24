@@ -9,6 +9,11 @@ gh --version
 ```
 
 ```bash
+# Tell gh to become the credential helper for Git (one-time)
+gh auth setup-git
+```
+
+```bash
 gh auth login --hostname github.com --git-protocol https
 
 # ? Where do you use GitHub? GitHub.com
@@ -39,6 +44,16 @@ gh auth status
 #   - Token scopes: 'read:org', 'repo', 'workflow'
 
 gh auth switch
+```
+
+```yml
+# ~/.config/gh/hosts.yml
+github.com:
+  git_protocol: https
+  users:
+    USER_1:
+    USER_2:
+  user: USER_1
 ```
 
 ```yml
