@@ -16,7 +16,7 @@ gh auth setup-git
 ```
 
 ```bash
-gh auth login --hostname github.com --git-protocol https
+gh auth login
 
 # ? Where do you use GitHub? GitHub.com
 # ? What is your preferred protocol for Git operations on this host? HTTPS
