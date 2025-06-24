@@ -1,5 +1,7 @@
 # Multiple Git identities (using GitHub)
 
+Last updated: `2025/05/24`
+
 ## Get started
 
 ```bash
