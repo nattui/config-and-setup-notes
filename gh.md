@@ -48,6 +48,30 @@ gh auth status
 gh auth switch
 ```
 
+```bash
+# Create file per identities
+
+# ~/.gitconfig-{{ USER_1 }}
+[user]
+    name  = {{ USER_NAME_1 }}
+    email = {{ USER_EMAIL_1 }}
+
+# ~/.gitconfig-{{ USER_2 }}
+[user]
+    name  = {{ USER_NAME_2 }}
+    email = {{ USER_EMAIL_2 }}
+```
+
+```bash
+# Map identity per directory
+# User 1
+[includeIf "gitdir:~/Documents/{{ FOLDER_PATH_1 }}/"]
+  path = ~/.gitconfig-{{ USER_1 }}
+# User 2
+[includeIf "gitdir:~/Documents/{{ FOLDER_PATH_2 }}/"]
+  path = ~/.gitconfig-{{ USER_2 }}
+```
+
 ## Verify
 
 ```yml
@@ -62,6 +86,10 @@ github.com:
 
 ```bash
 # ~/.gitconfig - What it should look like after running `gh auth setup-git`
+[includeIf "gitdir:~/Documents/{{ FOLDER_PATH_1 }}/"]
+  path = ~/.gitconfig-{{ USER_1 }}
+[includeIf "gitdir:~/Documents/{{ FOLDER_PATH_2 }}/"]
+  path = ~/.gitconfig-{{ USER_2 }}
 [credential "https://github.com"]
 	helper =
 	helper = !/opt/homebrew/bin/gh auth git-credential
