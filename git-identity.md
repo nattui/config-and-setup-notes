@@ -1,4 +1,4 @@
-# Multiple Git identities (using GitHub)
+# Multiple Git identities (GitHub accounts)
 
 Last updated: `2025/05/24`
 
