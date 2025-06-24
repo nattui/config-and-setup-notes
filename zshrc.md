@@ -75,6 +75,7 @@ alias g="git"
 alias gc="git clone"
 alias gph="git push"
 alias gpl="git pull"
+alias gs="gh auth switch"
 # Database
 alias dbm="pnpm run db:migrate"
 alias dbp="pnpm run db:push"
