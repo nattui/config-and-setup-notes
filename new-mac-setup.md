@@ -28,6 +28,7 @@ brew install git
 brew install node
 brew install pnpm
 brew install oven-sh/bun/bun
+brew install gh
 
 # install fonts
 brew install --cask font-commit-mono-nerd-font
@@ -50,9 +51,6 @@ brew install --cask mechvibes
 
 # install Starship
 brew install starship
-
-# install GitHub CLI
-brew install gh
 
 code ~/.zshrc
 # Documentation: https://starship.rs/#zsh
