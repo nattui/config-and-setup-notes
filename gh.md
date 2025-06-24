@@ -1,4 +1,6 @@
-Multiple Git identities (using GitHub)
+# Multiple Git identities (using GitHub)
+
+## Get started
 
 ```bash
 brew install gh
@@ -46,8 +48,10 @@ gh auth status
 gh auth switch
 ```
 
+## Verify
+
 ```yml
-# ~/.config/gh/hosts.yml
+# ~/.config/gh/hosts.yml - What it should look like after running `gh auth login`
 github.com:
   git_protocol: https
   users:
@@ -56,12 +60,12 @@ github.com:
   user: USER_1
 ```
 
-```yml
-# ~/.config/gh/hosts.yml
-github.com:
-  git_protocol: https
-  users:
-    USER_1:
-    USER_2:
-  user: USER_1
+```bash
+# ~/.gitconfig - What it should look like after running `gh auth setup-git`
+[credential "https://github.com"]
+	helper =
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper =
+	helper = !/opt/homebrew/bin/gh auth git-credential
 ```
