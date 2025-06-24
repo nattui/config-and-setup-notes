@@ -1,6 +1,6 @@
 # New Mac Setup
 
-Last updated: `2025/01/19`
+Last updated: `2025/05/24`
 
 ## Show hidden files
 
@@ -26,12 +26,8 @@ brew analytics off
 # Must-haves
 brew install git
 brew install node
-
-# npm
-npm install --global corepack@latest
-corepack enable pnpm
-
-npm install -g bun
+brew install pnpm
+brew install oven-sh/bun/bun
 
 # install fonts
 brew install --cask font-commit-mono-nerd-font
