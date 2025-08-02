@@ -31,6 +31,7 @@ pnpm install @nattui/react-components
 pnpm install @nattui/tailwind-tokenless
 pnpm install lucide-react
 
+pnpm install -D eslint-plugin-better-tailwindcss
 pnpm install -D eslint-plugin-perfectionist
 pnpm install -D eslint-plugin-unicorn
 pnpm install -D eslint-plugin-unused-imports
@@ -38,7 +39,6 @@ pnpm install -D prettier
 pnpm install -D prettier-plugin-css-order
 pnpm install -D prettier-plugin-packagejson
 pnpm install -D prettier-plugin-sort-json
-pnpm install -D prettier-plugin-tailwindcss
 
 # Application
 pnpm install bcryptjs
@@ -91,6 +91,7 @@ publicHoistPattern:
 
 ```jsx
 import { FlatCompat } from "@eslint/eslintrc"
+import pluginBetterTailwindcss from "eslint-plugin-better-tailwindcss"
 import pluginPerfectionist from "eslint-plugin-perfectionist"
 import pluginUnicorn from "eslint-plugin-unicorn"
 import pluginUnusedImports from "eslint-plugin-unused-imports"
@@ -108,6 +109,7 @@ const eslintConfig = [
   pluginUnicorn.configs["all"],
   {
     plugins: {
+      "better-tailwindcss": pluginBetterTailwindcss,
       "unused-imports": pluginUnusedImports,
     },
     rules: {
@@ -118,6 +120,16 @@ const eslintConfig = [
           allowInterfaces: "with-single-extends",
         },
       ],
+      "better-tailwindcss/enforce-consistent-class-order": "warn",
+      "better-tailwindcss/enforce-consistent-important-position": "warn",
+      "better-tailwindcss/enforce-consistent-line-wrapping": "warn",
+      "better-tailwindcss/enforce-consistent-variable-syntax": "warn",
+      "better-tailwindcss/enforce-shorthand-classes": "warn",
+      "better-tailwindcss/no-conflicting-classes": "error",
+      "better-tailwindcss/no-deprecated-classes": "warn",
+      "better-tailwindcss/no-duplicate-classes": "warn",
+      "better-tailwindcss/no-restricted-classes": "error",
+      "better-tailwindcss/no-unnecessary-whitespace": "warn",
       "perfectionist/sort-imports": [
         "error",
         {
