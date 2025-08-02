@@ -145,6 +145,12 @@ const eslintConfig = [
       "unicorn/prevent-abbreviations": "off",
       "unused-imports/no-unused-imports": "error",
     },
+    settings: {
+      "better-tailwindcss": {
+        entryPoint: "styles/global.css",
+        tailwindConfig: "tailwind.config.js",
+      },
+    },
   },
 ]
 
