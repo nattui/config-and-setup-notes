@@ -33,6 +33,7 @@ pnpm install lucide-react
 
 pnpm install -D eslint-plugin-better-tailwindcss
 pnpm install -D eslint-plugin-perfectionist
+pnpm install -D eslint-plugin-react-you-might-not-need-an-effect
 pnpm install -D eslint-plugin-unicorn
 pnpm install -D eslint-plugin-unused-imports
 pnpm install -D prettier
@@ -93,6 +94,7 @@ publicHoistPattern:
 import { FlatCompat } from "@eslint/eslintrc"
 import pluginBetterTailwindcss from "eslint-plugin-better-tailwindcss"
 import pluginPerfectionist from "eslint-plugin-perfectionist"
+import pluginReactYouMightNotNeedAnEffect from "eslint-plugin-react-you-might-not-need-an-effect"
 import pluginUnicorn from "eslint-plugin-unicorn"
 import pluginUnusedImports from "eslint-plugin-unused-imports"
 import { dirname } from "node:path"
@@ -106,6 +108,7 @@ const compat = new FlatCompat({ baseDirectory: __dirname })
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   pluginPerfectionist.configs["recommended-natural"],
+  pluginReactYouMightNotNeedAnEffect.configs["recommended"],
   pluginUnicorn.configs["all"],
   {
     plugins: {
