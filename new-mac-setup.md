@@ -37,12 +37,13 @@ brew install --cask font-jetbrains-mono-nerd-font
 # install software
 brew install --cask ghostty
 brew install --cask cursor
-brew install --cask brave-browser
-brew install --cask raycast
 brew install --cask figma
 brew install --cask shottr
 brew install --cask raindropio
 brew install --cask spotify
+
+Maybe
+brew install --cask raycast
 
 # Keyboard sounds
 # NK Cream 85 volume
