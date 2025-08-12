@@ -45,6 +45,7 @@ brew install --cask spotify
 Maybe
 brew install --cask raycast
 brew install --cask slack
+brew install --cask google-chrome
 
 # Keyboard sounds
 # NK Cream 85 volume
