@@ -32,7 +32,6 @@ brew install gh
 
 # install fonts
 brew install --cask font-commit-mono-nerd-font
-brew install --cask font-geist
 brew install --cask font-jetbrains-mono-nerd-font
 
 # install software
