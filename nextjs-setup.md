@@ -83,7 +83,7 @@ publicHoistPattern:
   "docker": "pnpm docker:build && pnpm docker:run",
   "docker:build": "docker build --tag next-docker .",
   "docker:run": "docker run --publish 3001:3001 next-docker",
-  "start": "next start --port 3001 --turbopack",
+  "start": "next start --port 3001",
   "update": "pnpx npm-check-updates --upgrade"
 },
 ```
