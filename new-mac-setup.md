@@ -35,7 +35,7 @@ brew install --cask font-commit-mono-nerd-font
 brew install --cask font-jetbrains-mono-nerd-font
 
 # install software
-brew install --cask iterm2
+brew install --cask ghostty
 brew install --cask cursor
 brew install --cask brave-browser
 brew install --cask raycast
