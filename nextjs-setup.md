@@ -111,6 +111,13 @@ const eslintConfig = [
   pluginReactYouMightNotNeedAnEffect.configs["recommended"],
   pluginUnicorn.configs["all"],
   {
+    ignores: [
+      ".next/**",
+      "build/**",
+      "next-env.d.ts",
+      "node_modules/**",
+      "out/**",
+    ],
     plugins: {
       "better-tailwindcss": pluginBetterTailwindcss,
       "unused-imports": pluginUnusedImports,
