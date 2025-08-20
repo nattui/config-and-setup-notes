@@ -72,8 +72,8 @@ publicHoistPattern:
   "check:fix": "pnpm check:format:fix && pnpm check:lint:fix",
   "check:format": "prettier --check .",
   "check:format:fix": "prettier --write .",
-  "check:lint": "next lint",
-  "check:lint:fix": "next lint --fix",
+  "check:lint": "eslint .",
+  "check:lint:fix": "eslint --fix .",
   "db:generate": "drizzle-kit generate --config=drizzle.config.ts",
   "db:introspect": "drizzle-kit introspect --config=drizzle.config.ts",
   "db:migrate": "drizzle-kit migrate --config=drizzle.config.ts",
@@ -111,13 +111,6 @@ const eslintConfig = [
   pluginReactYouMightNotNeedAnEffect.configs["recommended"],
   pluginUnicorn.configs["all"],
   {
-    ignores: [
-      ".next/**",
-      "build/**",
-      "next-env.d.ts",
-      "node_modules/**",
-      "out/**",
-    ],
     plugins: {
       "better-tailwindcss": pluginBetterTailwindcss,
       "unused-imports": pluginUnusedImports,
@@ -161,6 +154,15 @@ const eslintConfig = [
         tailwindConfig: "tailwind.config.js",
       },
     },
+  },
+  {
+    ignores: [
+      ".next/**",
+      "build/**",
+      "next-env.d.ts",
+      "node_modules/**",
+      "out/**",
+    ],
   },
 ]
 
