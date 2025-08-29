@@ -69,7 +69,7 @@ publicHoistPattern:
 "scripts": {
   "build": "next build --turbopack",
   "check": "pnpm check:format && pnpm check:lint && pnpm check:type",
-  "check:fix": "pnpm check:format:fix && pnpm check:lint:fix",
+  "check:fix": "pnpm check:format:fix && pnpm check:lint:fix && pnpm check:type",
   "check:format": "prettier --check .",
   "check:format:fix": "prettier --write .",
   "check:lint": "eslint .",
