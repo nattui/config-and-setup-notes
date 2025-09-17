@@ -53,10 +53,21 @@ pnpm install zustand
 pnpm install -D drizzle-kit
 ```
 
-Due to a bug with the way the default setting for pnpm handles peer dependencies in version 10+
-
 ```yaml
-# Fix eslint error where failed to load plugin 'react-hooks' declared in eslint-config-next/core-web-vitals
+# Security feature that delays the installation of newly released dependencies
+# to reduce the risk of installing compromised packages. When a new version
+# of a dependency is published, pnpm will wait for the specified time period
+# before allowing installation, giving the community time to identify and
+# report any security issues with the release.
+#
+# Documentation:
+# - https://pnpm.io/blog/releases/10.16#new-setting-for-delayed-dependency-updates
+# - https://pnpm.io/settings#minimumreleaseage
+minimumReleaseAge: 1440 # 1440 minutes = 1 day
+
+# Fix eslint error where failed to load plugin 'react-hooks' declared in
+# eslint-config-next/core-web-vitals
+#
 # Reference: https://github.com/vercel/next.js/issues/78813#issuecomment-2908051088
 publicHoistPattern:
   - "@next/eslint-plugin-next"
