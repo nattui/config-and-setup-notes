@@ -53,3 +53,17 @@ export default defineConfig([
   },
 ])
 ```
+
+```json
+// tsconfig.json
+
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx",
+    "strict": true
+  }
+}
+```
