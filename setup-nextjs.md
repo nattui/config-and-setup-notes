@@ -24,33 +24,32 @@ Creating a new Next.js app in /Users/snowshift/Documents/github/next-2024-12-24.
 
 # Remove name, version, private
 
-pnpm update && pnpm install
+bun update && bun install
 
-# pnpm install @phosphor-icons/react
-pnpm install @nattui/react-components
-pnpm install @nattui/tailwind-tokenless
-pnpm install lucide-react
+bun install @nattui/react-components
+bun install @nattui/tailwind-tokenless
+bun install lucide-react
 
-pnpm install -D eslint-plugin-better-tailwindcss
-pnpm install -D eslint-plugin-perfectionist
-pnpm install -D eslint-plugin-react-you-might-not-need-an-effect
-pnpm install -D eslint-plugin-unicorn
-pnpm install -D eslint-plugin-unused-imports
-pnpm install -D prettier
-pnpm install -D prettier-plugin-css-order
-pnpm install -D prettier-plugin-packagejson
-pnpm install -D prettier-plugin-sort-json
+bun install -D eslint-plugin-better-tailwindcss
+bun install -D eslint-plugin-perfectionist
+bun install -D eslint-plugin-react-you-might-not-need-an-effect
+bun install -D eslint-plugin-unicorn
+bun install -D eslint-plugin-unused-imports
+bun install -D prettier
+bun install -D prettier-plugin-css-order
+bun install -D prettier-plugin-packagejson
+bun install -D prettier-plugin-sort-json
 
 # Application
-pnpm install bcryptjs
-pnpm install drizzle-orm
-pnpm install jose
-pnpm install postgres
-pnpm install radix-ui
-pnpm install zod
-pnpm install zustand
+bun install bcryptjs
+bun install drizzle-orm
+bun install jose
+bun install postgres
+bun install radix-ui
+bun install zod
+bun install zustand
 
-pnpm install -D drizzle-kit
+bun install -D drizzle-kit
 ```
 
 ```yaml
