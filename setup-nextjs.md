@@ -108,13 +108,8 @@ import pluginPerfectionist from "eslint-plugin-perfectionist"
 import pluginReactYouMightNotNeedAnEffect from "eslint-plugin-react-you-might-not-need-an-effect"
 import pluginUnicorn from "eslint-plugin-unicorn"
 import pluginUnusedImports from "eslint-plugin-unused-imports"
-import { dirname } from "node:path"
-import { fileURLToPath } from "node:url"
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
-
-const compat = new FlatCompat({ baseDirectory: __dirname })
+const compat = new FlatCompat({ baseDirectory: import.meta.dirname })
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
@@ -154,7 +149,6 @@ const eslintConfig = [
       "unicorn/consistent-function-scoping": "off",
       "unicorn/no-keyword-prefix": "off",
       "unicorn/no-unused-properties": "warn",
-      "unicorn/prefer-import-meta-properties": "off",
       "unicorn/prevent-abbreviations": "off",
       "unused-imports/no-unused-imports": "error",
     },
