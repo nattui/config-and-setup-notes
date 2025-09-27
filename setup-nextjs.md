@@ -196,8 +196,7 @@ Don’t use `prettier.config.js` with Next.js https://prettier.io/docs/en/config
   "plugins": [
     "prettier-plugin-css-order",
     "prettier-plugin-packagejson",
-    "prettier-plugin-sort-json",
-    "prettier-plugin-tailwindcss"
+    "prettier-plugin-sort-json"
   ],
   "semi": false
 }
