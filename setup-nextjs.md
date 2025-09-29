@@ -94,7 +94,7 @@ publicHoistPattern:
   "docker:build": "docker build --tag next-docker .",
   "docker:run": "docker run --publish 3001:3001 next-docker",
   "start": "next start --port 3001",
-  "update": "pnpx taze --recursive"
+  "update": "taze --recursive"
 },
 "prettier": "@nattui/prettier-config",
 ```
