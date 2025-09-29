@@ -1,4 +1,4 @@
-# npm package
+# Npm package
 
 Configuration for publishing a npm package
 

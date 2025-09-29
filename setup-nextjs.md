@@ -1,4 +1,4 @@
-# Next.js Setup
+# Next.js setup
 
 ```bash
 pnpx create-next-app@latest

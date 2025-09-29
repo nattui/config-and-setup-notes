@@ -1,4 +1,4 @@
-# New Mac Setup
+# New Mac setup
 
 ## Show hidden files
 

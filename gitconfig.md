@@ -1,4 +1,4 @@
-# Git Config
+# Git config
 
 ```
 # cursor ~/.gitconfig

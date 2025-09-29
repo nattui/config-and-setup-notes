@@ -1,4 +1,4 @@
-# VSCode User Settings
+# VSCode user settings
 
 ```jsonc
 {
