@@ -24,32 +24,31 @@ Creating a new Next.js app in /Users/snowshift/Documents/github/next-2024-12-24.
 
 # Remove name, version, private
 
-bun update && bun install
+pnpm update && pnpm install
 
-bun install @nattui/react-components
-bun install @nattui/tailwind-tokenless
-bun install lucide-react
+pnpm install @nattui/react-components
+pnpm install @nattui/tailwind-tokenless
+pnpm install lucide-react
 
-bun install -D eslint-plugin-better-tailwindcss
-bun install -D eslint-plugin-perfectionist
-bun install -D eslint-plugin-react-you-might-not-need-an-effect
-bun install -D eslint-plugin-unicorn
-bun install -D eslint-plugin-unused-imports
-bun install -D prettier
-bun install -D prettier-plugin-css-order
-bun install -D prettier-plugin-packagejson
-bun install -D prettier-plugin-sort-json
+pnpm install -D @nattui/prettier-config
+pnpm install -D eslint-plugin-better-tailwindcss
+pnpm install -D eslint-plugin-perfectionist
+pnpm install -D eslint-plugin-react-you-might-not-need-an-effect
+pnpm install -D eslint-plugin-unicorn
+pnpm install -D eslint-plugin-unused-imports
+pnpm install -D prettier
+
 
 # Application
-bun install bcryptjs
-bun install drizzle-orm
-bun install jose
-bun install postgres
-bun install radix-ui
-bun install zod
-bun install zustand
+pnpm install bcryptjs
+pnpm install drizzle-orm
+pnpm install jose
+pnpm install postgres
+pnpm install radix-ui
+pnpm install zod
+pnpm install zustand
 
-bun install -D drizzle-kit
+pnpm install -D drizzle-kit
 ```
 
 ```yaml
@@ -95,8 +94,8 @@ publicHoistPattern:
   "docker:build": "docker build --tag next-docker .",
   "docker:run": "docker run --publish 3001:3001 next-docker",
   "start": "next start --port 3001",
-  "update": "pnpx npm-check-updates --upgrade"
 },
+"prettier": "@nattui/prettier-config",
 ```
 
 `eslint.config.mjs`
@@ -179,23 +178,6 @@ export default eslintConfig
 pnpm-lock.yaml
 ```
 
-`.prettierrc`
-
-Don’t use `prettier.config.js` with Next.js https://prettier.io/docs/en/configuration
-
-```json
-{
-  "cssDeclarationSorterOrder": "alphabetical",
-  "jsonRecursiveSort": true,
-  "plugins": [
-    "prettier-plugin-css-order",
-    "prettier-plugin-packagejson",
-    "prettier-plugin-sort-json"
-  ],
-  "semi": false
-}
-```
-
 `styles/global.css`
 
 ```css
@@ -229,7 +211,7 @@ html {
 ---
 
 > [!WARNING]
-> Old
+> Depreciated
 
 `.eslintrc.json` old
 
@@ -269,7 +251,7 @@ html {
 ```
 
 > [!WARNING]
-> Old
+> Depreciated
 
 `tailwind.config.ts`
 
@@ -319,4 +301,24 @@ const config: Config = {
 }
 
 export default config
+```
+
+> [!WARNING]
+> Depreciated
+
+`.prettierrc`
+
+Don’t use `prettier.config.js` with Next.js https://prettier.io/docs/en/configuration
+
+```json
+{
+  "cssDeclarationSorterOrder": "alphabetical",
+  "jsonRecursiveSort": true,
+  "plugins": [
+    "prettier-plugin-css-order",
+    "prettier-plugin-packagejson",
+    "prettier-plugin-sort-json"
+  ],
+  "semi": false
+}
 ```
