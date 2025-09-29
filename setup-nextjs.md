@@ -64,6 +64,18 @@ pnpm install -D drizzle-kit
 # - https://pnpm.io/settings#minimumreleaseage
 minimumReleaseAge: 1440 # 1440 minutes = 1 day
 
+# Defines which directories contain packages that should be included in your
+# pnpm workspace (monorepo).
+#
+# Documentation:
+# - https://pnpm.io/workspaces#packages
+#
+# Example: Shared dependencies: Packages can reference each other using
+# workspace protocol (e.g., "my-package": "workspace:*").
+packages:
+  - "apps/*"
+  - "packages/*"
+
 # 1. Fix eslint error where failed to load plugin 'react-hooks' declared in
 # eslint-config-next/core-web-vitals.
 #
