@@ -64,13 +64,16 @@ pnpm install -D drizzle-kit
 # - https://pnpm.io/settings#minimumreleaseage
 minimumReleaseAge: 1440 # 1440 minutes = 1 day
 
-# Fix eslint error where failed to load plugin 'react-hooks' declared in
-# eslint-config-next/core-web-vitals
+# 1. Fix eslint error where failed to load plugin 'react-hooks' declared in
+# eslint-config-next/core-web-vitals.
 #
 # Reference: https://github.com/vercel/next.js/issues/78813#issuecomment-2908051088
+#
+# 2. Fix prettier error where failed to load plugins.
 publicHoistPattern:
   - "@next/eslint-plugin-next"
   - "eslint-plugin-react-hooks"
+  - "prettier-plugin-*"
 ```
 
 `package.json`
