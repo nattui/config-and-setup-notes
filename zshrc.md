@@ -1,7 +1,5 @@
 # Zshrc
 
-Last updated: `2025/06/15`
-
 ```bash
 # :: Notes ::
 # Remember to add this

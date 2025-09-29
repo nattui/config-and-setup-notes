@@ -1,3 +1,5 @@
+# Setup hono
+
 ```bash
 bun add --dev @eslint/js
 bun add --dev eslint

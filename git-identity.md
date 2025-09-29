@@ -1,7 +1,5 @@
 # Managing multiple GitHub identities
 
-Last updated: `2025/05/24`
-
 ## Get started
 
 ```bash

@@ -1,3 +1,5 @@
+# npm package
+
 Configuration for publishing a npm package
 
 ## Minimum

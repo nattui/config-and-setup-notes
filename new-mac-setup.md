@@ -1,7 +1,5 @@
 # New Mac Setup
 
-Last updated: `2025/05/24`
-
 ## Show hidden files
 
 To show hidden files globally on a Mac and have it persist, run the following commands in the Terminal:

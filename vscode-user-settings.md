@@ -1,7 +1,5 @@
 # VSCode User Settings
 
-Last updated: `2025/05/16`
-
 ```jsonc
 {
   "accessibility.signalOptions.volume": 25, // Volume level for accessibility sound signals

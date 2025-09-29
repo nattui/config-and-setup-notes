@@ -1,7 +1,5 @@
 # Next.js Setup
 
-Last updated: `2025/06/20`
-
 ```bash
 pnpx create-next-app@latest
 

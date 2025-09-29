@@ -1,7 +1,5 @@
 # Git Config
 
-Last updated: `2024/12/26`
-
 ```
 # cursor ~/.gitconfig
 
