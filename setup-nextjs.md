@@ -52,6 +52,17 @@ pnpm install -D drizzle-kit
 ```
 
 ```yaml
+# Catalog defines shared dependency versions across the workspace.
+# This ensures consistent versions of prettier and its plugins are used
+# throughout all packages in the monorepo.
+#
+# Documentation: https://pnpm.io/catalogs
+catalog:
+  prettier-plugin-css-order: "^2.1.2"
+  prettier-plugin-packagejson: "^2.5.19"
+  prettier-plugin-sort-json: "^4.1.1"
+  prettier: "^3.6.2"
+
 # Security feature that delays the installation of newly released dependencies
 # to reduce the risk of installing compromised packages. When a new version
 # of a dependency is published, pnpm will wait for the specified time period
