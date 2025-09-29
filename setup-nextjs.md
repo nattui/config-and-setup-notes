@@ -37,6 +37,7 @@ pnpm install -D eslint-plugin-react-you-might-not-need-an-effect
 pnpm install -D eslint-plugin-unicorn
 pnpm install -D eslint-plugin-unused-imports
 pnpm install -D prettier
+pnpm install -D taze
 
 
 # Application
