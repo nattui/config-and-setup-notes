@@ -75,16 +75,13 @@ packages:
   - "apps/*"
   - "packages/*"
 
-# 1. Fix eslint error where failed to load plugin 'react-hooks' declared in
+# Fix eslint error where failed to load plugin 'react-hooks' declared in
 # eslint-config-next/core-web-vitals.
 #
 # Reference: https://github.com/vercel/next.js/issues/78813#issuecomment-2908051088
-#
-# 2. Fix prettier error where failed to load plugins.
 publicHoistPattern:
   - "@next/eslint-plugin-next"
   - "eslint-plugin-react-hooks"
-  - "prettier-plugin-*"
 ```
 
 `package.json`
@@ -112,6 +109,26 @@ publicHoistPattern:
   "update": "taze --recursive"
 },
 "prettier": "@nattui/prettier-config",
+```
+
+```js
+// prettier.config.mjs
+/**
+ * @see https://prettier.io/docs/configuration
+ * @type {import("prettier").Config}
+ */
+const config = {
+  cssDeclarationSorterOrder: "alphabetical",
+  jsonRecursiveSort: true,
+  plugins: [
+    "prettier-plugin-css-order",
+    "prettier-plugin-packagejson",
+    "prettier-plugin-sort-json",
+  ],
+  semi: false,
+}
+
+export default config
 ```
 
 `eslint.config.mjs`
