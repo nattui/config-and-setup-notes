@@ -12,6 +12,7 @@ bun add --dev typescript-eslint
 
 ```ts
 // eslint.config.mts
+
 import pluginJs from "@eslint/js"
 import pluginPerfectionist from "eslint-plugin-perfectionist"
 import pluginReact from "eslint-plugin-react"
