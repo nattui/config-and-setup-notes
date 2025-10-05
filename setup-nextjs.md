@@ -51,12 +51,8 @@ For pnpm workspace configuration (monorepo setup), see [setup-pnpm.md](./setup-p
 ```json
 "scripts": {
   "build": "next build --turbopack",
-  "check": "pnpm check:format && pnpm check:lint && pnpm check:type",
-  "check:fix": "pnpm check:format:fix && pnpm check:lint:fix && pnpm check:type",
-  "check:format": "prettier --check .",
-  "check:format:fix": "prettier --write .",
-  "check:lint": "eslint .",
-  "check:lint:fix": "eslint --fix .",
+  "check": "biome check",
+  "check:fix": "biome check --write",
   "check:type": "next typegen && tsc --noEmit",
   "db:generate": "drizzle-kit generate --config=drizzle.config.ts",
   "db:introspect": "drizzle-kit introspect --config=drizzle.config.ts",
