@@ -28,12 +28,7 @@ pnpm install @nattui/react-components
 pnpm install @nattui/tailwind-tokenless
 pnpm install lucide-react
 
-pnpm install -D @nattui/prettier-config
-pnpm install -D eslint-plugin-better-tailwindcss
-pnpm install -D eslint-plugin-perfectionist
-pnpm install -D eslint-plugin-react-you-might-not-need-an-effect
-pnpm install -D eslint-plugin-unicorn
-pnpm install -D eslint-plugin-unused-imports
+pnpm install -D @biomejs/biome
 pnpm install -D taze
 
 
@@ -50,16 +45,13 @@ pnpm install -D drizzle-kit
 ```
 
 ```yaml
-# Catalog defines shared dependency versions across the workspace.
-# This ensures consistent versions of prettier and its plugins are used
-# throughout all packages in the monorepo.
+# Catalog defines shared dependency versions across the workspace. This ensures
+# consistent versions of dependencies are used throughout all packages in the
+# monorepo.
 #
 # Documentation: https://pnpm.io/catalogs
 catalog:
-  prettier-plugin-css-order: "^2.1.2"
-  prettier-plugin-packagejson: "^2.5.19"
-  prettier-plugin-sort-json: "^4.1.1"
-  prettier: "^3.6.2"
+  "@biomejs/biome": "^2.2.5"
 
 # Security feature that delays the installation of newly released dependencies
 # to reduce the risk of installing compromised packages. When a new version
