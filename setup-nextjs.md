@@ -33,9 +33,7 @@ pnpm install -D taze
 
 
 # Application
-pnpm install bcryptjs
 pnpm install drizzle-orm
-pnpm install jose
 pnpm install postgres
 pnpm install radix-ui
 pnpm install zod
