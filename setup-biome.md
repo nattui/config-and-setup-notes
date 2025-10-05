@@ -13,14 +13,7 @@
     }
   },
   "files": {
-    "ignoreUnknown": false,
-    "includes": [
-      "**",
-      "!**/.next",
-      "!**/.turbo",
-      "!**/dist",
-      "!**/storybook-static"
-    ]
+    "ignoreUnknown": false
   },
   "formatter": {
     "indentStyle": "space"
@@ -44,6 +37,9 @@
       "correctness": {
         "useUniqueElementIds": "off"
       },
+      "nursery": {
+        "useSortedClasses": "error"
+      },
       "performance": {
         "noImgElement": "off",
         "noReExportAll": "error"
@@ -60,8 +56,8 @@
   },
   "vcs": {
     "clientKind": "git",
-    "enabled": false,
-    "useIgnoreFile": false
+    "enabled": true,
+    "useIgnoreFile": true
   }
 }
 ```
