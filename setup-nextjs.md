@@ -53,7 +53,6 @@ For pnpm workspace configuration (monorepo setup), see [setup-pnpm.md](./setup-p
   "check:fix": "biome check --unsafe --write",
   "check:package": "sh scripts/sort-package-json.sh",
   "check:type": "next typegen && tsc --noEmit",
-  "check:type:watch": "next typegen && tsc --noEmit --watch",
   "db:generate": "drizzle-kit generate --config=drizzle.config.ts",
   "db:introspect": "drizzle-kit introspect --config=drizzle.config.ts",
   "db:migrate": "drizzle-kit migrate --config=drizzle.config.ts",
