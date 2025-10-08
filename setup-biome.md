@@ -13,7 +13,8 @@
     }
   },
   "files": {
-    "ignoreUnknown": false
+    "ignoreUnknown": false,
+    "includes": ["**", "!**/package.json"]
   },
   "formatter": {
     "indentStyle": "space"
