@@ -48,7 +48,7 @@ For pnpm workspace configuration (monorepo setup), see [setup-pnpm.md](./setup-p
 
 ```json
 "scripts": {
-  "build": "next build --turbopack",
+  "build": "next build",
   "check": "biome check",
   "check:fix": "biome check --unsafe --write",
   "check:package": "sh scripts/sort-package-json.sh",
@@ -58,7 +58,7 @@ For pnpm workspace configuration (monorepo setup), see [setup-pnpm.md](./setup-p
   "db:migrate": "drizzle-kit migrate --config=drizzle.config.ts",
   "db:push": "drizzle-kit push --config=drizzle.config.ts",
   "db:studio": "drizzle-kit studio --config=drizzle.config.ts --verbose",
-  "dev": "next dev --port 3001 --turbopack",
+  "dev": "next dev --port 3001",
   "docker": "pnpm docker:build && pnpm docker:run",
   "docker:build": "docker build --tag next-docker .",
   "docker:run": "docker run --publish 3001:3001 next-docker",
