@@ -2,7 +2,7 @@
 ```jsonc
 // biome.jsonc
 {
-  "$schema": "https://biomejs.dev/schemas/2.2.5/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.3.1/schema.json",
   "assist": {
     "actions": {
       "source": {
@@ -12,9 +12,14 @@
       }
     }
   },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  },
   "files": {
     "ignoreUnknown": false,
-    "includes": ["**", "!**/package.json"]
+    "includes": ["**", "!**/migrations/meta", "!**/package.json"]
   },
   "formatter": {
     "indentStyle": "space"
@@ -39,7 +44,10 @@
         "useUniqueElementIds": "off"
       },
       "nursery": {
-        "useSortedClasses": "error"
+        "useSortedClasses": {
+          "fix": "safe",
+          "level": "error"
+        }
       },
       "performance": {
         "noImgElement": "off",
