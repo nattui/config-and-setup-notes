@@ -19,7 +19,7 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "includes": ["**", "!**/migrations/meta", "!**/package.json"]
+    "includes": ["**", "!**/package.json"]
   },
   "formatter": {
     "indentStyle": "space"
