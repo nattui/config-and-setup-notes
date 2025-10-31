@@ -2,7 +2,7 @@
 ```jsonc
 // biome.jsonc
 {
-  "$schema": "https://biomejs.dev/schemas/2.3.1/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.3.2/schema.json",
   "assist": {
     "actions": {
       "source": {
@@ -41,6 +41,11 @@
         "noUselessFragments": "off"
       },
       "correctness": {
+        "noUnknownProperty": "off",
+        "noUnusedImports": {
+          "fix": "safe",
+          "level": "error"
+        },
         "useUniqueElementIds": "off"
       },
       "nursery": {
