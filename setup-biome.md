@@ -14,6 +14,7 @@
   },
   "css": {
     "parser": {
+      "cssModules": true,
       "tailwindDirectives": true
     }
   },
@@ -22,7 +23,9 @@
     "includes": ["**", "!**/package.json"]
   },
   "formatter": {
-    "indentStyle": "space"
+    "attributePosition": "multiline",
+    "indentStyle": "space",
+    "lineWidth": 100
   },
   "javascript": {
     "formatter": {
