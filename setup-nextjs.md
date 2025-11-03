@@ -67,6 +67,20 @@ For pnpm workspace configuration (monorepo setup), see [setup-pnpm.md](./setup-p
 },
 ```
 
+`next.config.ts`
+
+```ts
+import type { NextConfig } from "next"
+
+const nextConfig: NextConfig = {
+  reactCompiler: true,
+  reactStrictMode: false,
+  typedRoutes: true,
+}
+
+export default nextConfig
+```
+
 `styles/global.css`
 
 ```css
