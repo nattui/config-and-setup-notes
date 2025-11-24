@@ -45,6 +45,7 @@
   "terminal.integrated.fontFamily": "CommitMono Nerd Font", // Terminal font
   "typescript.preferences.autoImportFileExcludePatterns": ["lucide-react"], // Change the autocompletion (e.g. import { Link } from "lucide-react") Reference: https://lucide.dev/guide/advanced/aliased-names#choosing-import-name-style
   "typescript.preferences.importModuleSpecifier": "non-relative", // Prefers a non-relative import based
+  "typescript.referencesCodeLens.enabled": true, // Shows inline where your functions and variables are used
   "typescript.tsdk": "node_modules/typescript/lib", // Use workspace typescript version
   "typescript.updateImportsOnFileMove.enabled": "always", // Automatically update imports
   "window.commandCenter": false, // Turns off the editor top section
