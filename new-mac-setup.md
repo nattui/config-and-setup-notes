@@ -40,14 +40,18 @@ brew install --cask font-inter-tight
 brew install --cask font-jetbrains-mono-nerd-font
 
 # install software
+brew install --cask ghostty
 brew install --cask cursor
 brew install --cask figma
 brew install --cask shottr
 brew install --cask raindropio
 brew install --cask spotify
+brew install --cask the-unarchiver
+brew install --cask applite
+brew install --cask steam
+brew install --cask raycast
 
 Maybe
-brew install --cask raycast
 brew install --cask slack
 brew install --cask google-chrome
 
