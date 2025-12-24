@@ -25,15 +25,21 @@ brew analytics off
 brew install git
 brew install node
 brew install pnpm
-brew install oven-sh/bun/bun
 brew install gh
 
+brew tap oven-sh/bun
+brew install bun
+
 # install fonts
+# https://formulae.brew.sh/cask-font
 brew install --cask font-commit-mono-nerd-font
+brew install --cask font-geist
+brew install --cask font-google-sans-code
+brew install --cask font-inter
+brew install --cask font-inter-tight
 brew install --cask font-jetbrains-mono-nerd-font
 
 # install software
-brew install --cask ghostty
 brew install --cask cursor
 brew install --cask figma
 brew install --cask shottr
