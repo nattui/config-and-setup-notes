@@ -11,8 +11,16 @@ copy-on-select = clipboard
 font-family = CommitMono Nerd Font
 font-feature = -calt, -dlig, -liga
 font-size = 12
+foreground = #FFFFFF
 macos-titlebar-style = tabs
-theme = Github Dark High Contrast
+palette = 0=#0B0F10
+palette = 1=#86BBD8
+palette = 2=#FCA17D
+palette = 3=#FFFFFF
+palette = 4=#DA627D
+palette = 5=#33658A
+palette = 6=#86BBD8
+palette = 7=#9A348E
 title = " "
 window-colorspace = display-p3
 window-padding-x = 10
