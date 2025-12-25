@@ -62,11 +62,8 @@ brew install --cask mechvibes
 # install Starship
 brew install starship
 
-code ~/.zshrc
-# Documentation: https://starship.rs/#zsh
-# Add this line to ~/.zshrc
-# eval "$(starship init zsh)"
-
+brew install fastfetch
+brew install zoxide
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 ```
