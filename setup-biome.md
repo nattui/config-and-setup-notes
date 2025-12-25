@@ -19,8 +19,8 @@
     }
   },
   "files": {
-    "ignoreUnknown": false,
-    "includes": ["**", "!**/package.json"]
+    "ignoreUnknown": true,
+    "includes": ["**", "!.next", "!build", "!dist", "!node_modules"]
   },
   "formatter": {
     "attributePosition": "multiline",
@@ -34,6 +34,10 @@
     }
   },
   "linter": {
+    "domains": {
+      "next": "recommended",
+      "react": "recommended"
+    },
     "rules": {
       "a11y": {
         "noLabelWithoutControl": "off",
