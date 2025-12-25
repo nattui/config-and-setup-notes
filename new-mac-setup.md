@@ -62,6 +62,7 @@ brew install --cask mechvibes
 # install Starship
 brew install starship
 
+brew install eza
 brew install fastfetch
 brew install zoxide
 brew install zsh-autosuggestions
