@@ -12,6 +12,7 @@ font-feature = -calt, -dlig, -liga
 font-size = 12
 macos-titlebar-style = tabs
 theme = Github Dark High Contrast
+title = " "
 window-colorspace = display-p3
 window-padding-x = 10
 window-padding-y = 10
