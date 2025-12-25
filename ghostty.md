@@ -7,6 +7,7 @@ background = #000000
 background-blur-radius = 40
 background-opacity = 0.8
 clipboard-read = allow
+command = /bin/zsh -lc 'fastfetch; exec zsh'
 copy-on-select = clipboard
 cursor-style = block
 font-family = CommitMono Nerd Font
