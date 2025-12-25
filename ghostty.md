@@ -1,8 +1,6 @@
 # Ghostty settings
 
-Documentation
-
-https://ghostty.org/docs/config/reference
+## Settings
 
 ```toml
 background-blur-radius = 40
@@ -17,3 +15,12 @@ window-colorspace = display-p3
 window-padding-x = 10
 window-padding-y = 10
 ```
+
+## Documentation
+
+https://ghostty.org/docs/config/reference
+
+## Reference
+
+- https://www.youtube.com/watch?v=uOnL4fEnldA
+- https://www.youtube.com/watch?v=3LLmUk5_l30
