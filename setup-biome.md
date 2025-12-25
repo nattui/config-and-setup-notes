@@ -1,8 +1,11 @@
+# Biome setup for Next.js
+
+Remember to rename `.json` to `.jsonc`.
 
 ```jsonc
 // biome.jsonc
 {
-  "$schema": "https://biomejs.dev/schemas/2.3.2/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.3.10/schema.json",
   "assist": {
     "actions": {
       "source": {
