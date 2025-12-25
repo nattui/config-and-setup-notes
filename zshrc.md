@@ -14,7 +14,12 @@ eval "$(starship init zsh)"
 # Autosuggestions
 # Install: brew install zsh-autosuggestions
 # Reference: https://formulae.brew.sh/formula/zsh-autosuggestions
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Syntax highlighting
+# Install: brew install zsh-syntax-highlighting
+# Reference: https://formulae.brew.sh/formula/zsh-syntax-highlighting
+source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # pnpm
 export PNPM_HOME="/Users/snowshift/Library/pnpm"
