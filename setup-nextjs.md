@@ -63,7 +63,7 @@ For pnpm workspace configuration (monorepo setup), see [setup-pnpm.md](./setup-p
   "docker:build": "docker build --tag next-docker .",
   "docker:run": "docker run --publish 3001:3001 next-docker",
   "start": "next start --port 3001",
-  "update": "taze --recursive"
+  "update": "bun update --interactive --recursive"
 },
 ```
 
