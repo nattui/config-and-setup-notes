@@ -8,6 +8,7 @@ background-opacity = 0.8
 clipboard-read = allow
 copy-on-select = clipboard
 font-family = CommitMono Nerd Font
+font-feature = -calt, -dlig, -liga
 font-size = 12
 macos-titlebar-style = tabs
 theme = Github Dark High Contrast
