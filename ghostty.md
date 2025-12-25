@@ -3,6 +3,7 @@
 ## Settings
 
 ```toml
+background = #000000
 background-blur-radius = 40
 background-opacity = 0.8
 clipboard-read = allow
