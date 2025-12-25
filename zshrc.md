@@ -11,6 +11,11 @@
 # Reference: https://starship.rs/#zsh
 eval "$(starship init zsh)"
 
+# Zoxide
+# Install: brew install zoxide
+# Reference: https://formulae.brew.sh/formula/zoxide
+eval "$(zoxide init zsh)"
+
 # Autosuggestions
 # Install: brew install zsh-autosuggestions
 # Reference: https://formulae.brew.sh/formula/zsh-autosuggestions
@@ -20,6 +25,8 @@ source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Install: brew install zsh-syntax-highlighting
 # Reference: https://formulae.brew.sh/formula/zsh-syntax-highlighting
 source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
 
 # pnpm
 export PNPM_HOME="/Users/snowshift/Library/pnpm"
@@ -86,6 +93,8 @@ alias gp="git pull"
 alias gph="git push"
 alias gpl="git pull"
 alias gs="gh auth switch"
+# Zoxide
+alias cd='z'
 # Database
 alias dbm="pnpm run db:migrate"
 alias dbp="pnpm run db:push"
@@ -98,6 +107,9 @@ alias k='_k() { lsof -ti:$1 | xargs kill -9 2>/dev/null && echo "Killed process 
 # Getting IP address
 alias i="ipconfig getifaddr en0"
 alias ip="ipconfig getifaddr en0"
+# Information
+alias info="fastfetch"
+alias info-all="fastfetch --config all"
 # Reload `.zshrc`
 alias r="source ~/.zshrc"
 alias reload="source ~/.zshrc"
