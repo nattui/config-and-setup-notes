@@ -23,7 +23,7 @@ Remember to rename `.json` to `.jsonc`.
   },
   "files": {
     "ignoreUnknown": true,
-    "includes": ["**", "!.next", "!build", "!dist", "!node_modules"]
+    "includes": ["**", "!.next", "!build", "!bun.lock", "!dist", "!node_modules"]
   },
   "formatter": {
     "attributePosition": "multiline",
