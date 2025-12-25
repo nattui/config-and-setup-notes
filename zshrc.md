@@ -1,11 +1,6 @@
 # Zshrc
 
 ```bash
-# :: Notes ::
-# Remember to add this
-# git config --global core.ignorecase false
-# cursor ~/.gitconfig
-
 # Starship
 # Install: brew install starship
 # Reference: https://starship.rs/#zsh
@@ -93,8 +88,10 @@ alias gp="git pull"
 alias gph="git push"
 alias gpl="git pull"
 alias gs="gh auth switch"
-# Zoxide
-alias cd='z'
+# Zoxide: cd alternative
+alias cd="z"
+# eza: ls alternative
+alias ls="eza --all --color=always --group-directories-first --hyperlink --icons=always --oneline"
 # Database
 alias dbm="pnpm run db:migrate"
 alias dbp="pnpm run db:push"
