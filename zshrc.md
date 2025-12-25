@@ -107,6 +107,8 @@ alias ip="ipconfig getifaddr en0"
 # Information
 alias info="fastfetch"
 alias info-all="fastfetch --config all"
+# System information
+alias sys="btop"
 # Reload `.zshrc`
 alias r="source ~/.zshrc"
 alias reload="source ~/.zshrc"
