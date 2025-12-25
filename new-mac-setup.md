@@ -68,4 +68,5 @@ code ~/.zshrc
 # eval "$(starship init zsh)"
 
 brew install zsh-autosuggestions
+brew install zsh-syntax-highlighting
 ```
