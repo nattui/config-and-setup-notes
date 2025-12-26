@@ -11,7 +11,7 @@ killall Finder
 
 ## Software
 
-```
+```bash
 # install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -40,21 +40,22 @@ brew install --cask font-inter-tight
 brew install --cask font-jetbrains-mono-nerd-font
 
 # install software
-brew install --cask ghostty
+brew install --cask applite
 brew install --cask cursor
 brew install --cask figma
-brew install --cask shottr
+brew install --cask ghostty
+brew install --cask iina # Video player
 brew install --cask raindropio
-brew install --cask spotify
-brew install --cask the-unarchiver
-brew install --cask applite
-brew install --cask steam
 brew install --cask raycast
+brew install --cask shottr
+brew install --cask spotify
+brew install --cask steam
+brew install --cask the-unarchiver
 
 Maybe
-brew install --cask slack
 brew install --cask google-chrome
 brew install --cask productdevbook/tap/portkiller
+brew install --cask slack
 
 # Keyboard sounds
 # NK Cream 85 volume
