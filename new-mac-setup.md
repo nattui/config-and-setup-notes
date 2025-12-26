@@ -54,6 +54,7 @@ brew install --cask raycast
 Maybe
 brew install --cask slack
 brew install --cask google-chrome
+brew install --cask productdevbook/tap/portkiller
 
 # Keyboard sounds
 # NK Cream 85 volume
