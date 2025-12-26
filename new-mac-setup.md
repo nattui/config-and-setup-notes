@@ -40,14 +40,14 @@ brew install --cask font-inter-tight
 brew install --cask font-jetbrains-mono-nerd-font
 
 # install software
-brew install --cask applite
+brew install --cask applite # Homebrew UI
 brew install --cask cursor
 brew install --cask figma
-brew install --cask ghostty
+brew install --cask ghostty # Terminal
 brew install --cask iina # Video player
-brew install --cask raindropio
-brew install --cask raycast
-brew install --cask shottr
+brew install --cask raindropio # Bookmarks
+brew install --cask raycast # Launcher
+brew install --cask shottr # Screenshot
 brew install --cask spotify
 brew install --cask steam
 brew install --cask the-unarchiver
