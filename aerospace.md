@@ -111,6 +111,9 @@ on-mode-changed = []
     # end tell'
     # '''
 
+    alt-semicolon = 'workspace prev --wrap-around'
+    alt-quote = 'workspace next --wrap-around'
+
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
     alt-slash = 'layout tiles horizontal vertical'
     alt-comma = 'layout accordion horizontal vertical'
