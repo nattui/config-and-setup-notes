@@ -22,10 +22,10 @@ enable-normalization-opposite-orientation-for-nested-containers = true
 # See: https://nikitabobko.github.io/AeroSpace/guide#layouts
 # The 'accordion-padding' specifies the size of accordion padding
 # You can set 0 to disable the padding feature
-accordion-padding = 10
+accordion-padding = 20
 
 # Possible values: tiles|accordion
-default-root-container-layout = 'tiles'
+default-root-container-layout = 'accordion'
 
 # Possible values: horizontal|vertical|auto
 # 'auto' means: wide monitor (anything wider than high) gets horizontal orientation,
@@ -48,9 +48,9 @@ automatically-unhide-macos-hidden-apps = false
 # even when they are invisible.
 # This config version is only available since 'config-version = 2'
 # Fallback value (if you omit the key): persistent-workspaces = []
-persistent-workspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C",
-                         "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O",
-                         "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+# persistent-workspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C",
+#                          "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O",
+#                          "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
 # A callback that runs every time binding mode changes
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -111,24 +111,31 @@ on-mode-changed = []
     # end tell'
     # '''
 
-    alt-semicolon = 'workspace prev --wrap-around'
-    alt-quote = 'workspace next --wrap-around'
-
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
-    alt-slash = 'layout tiles horizontal vertical'
-    alt-comma = 'layout accordion horizontal vertical'
+    alt-n = 'layout accordion horizontal vertical'
+    alt-m = 'layout tiles horizontal vertical'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-    alt-left = 'focus left'
-    alt-down = 'focus down'
-    alt-up = 'focus up'
-    alt-right = 'focus right'
+    alt-a = 'focus left'
+    alt-s = 'focus down'
+    alt-w = 'focus up'
+    alt-d = 'focus right'
+
+    alt-j = 'focus left'
+    alt-k = 'focus down'
+    alt-i = 'focus up'
+    alt-l = 'focus right'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move
-    alt-shift-left = 'move left'
-    alt-shift-down = 'move down'
-    alt-shift-up = 'move up'
-    alt-shift-right = 'move right'
+    alt-shift-a = 'move left'
+    alt-shift-s = 'move down'
+    alt-shift-w = 'move up'
+    alt-shift-d = 'move right'
+
+    alt-shift-j = 'move left'
+    alt-shift-k = 'move down'
+    alt-shift-i = 'move up'
+    alt-shift-l = 'move right'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#resize
     alt-minus = 'resize smart -50'
@@ -144,28 +151,6 @@ on-mode-changed = []
     alt-7 = 'workspace 7'
     alt-8 = 'workspace 8'
     alt-9 = 'workspace 9'
-    alt-a = 'workspace A' # In your config, you can drop workspace bindings that you don't need
-    alt-b = 'workspace B'
-    alt-c = 'workspace C'
-    alt-d = 'workspace D'
-    alt-e = 'workspace E'
-    alt-f = 'workspace F'
-    alt-g = 'workspace G'
-    alt-i = 'workspace I'
-    alt-m = 'workspace M'
-    alt-n = 'workspace N'
-    alt-o = 'workspace O'
-    alt-p = 'workspace P'
-    alt-q = 'workspace Q'
-    alt-r = 'workspace R'
-    alt-s = 'workspace S'
-    alt-t = 'workspace T'
-    alt-u = 'workspace U'
-    alt-v = 'workspace V'
-    alt-w = 'workspace W'
-    alt-x = 'workspace X'
-    alt-y = 'workspace Y'
-    alt-z = 'workspace Z'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
     alt-shift-1 = 'move-node-to-workspace 1'
@@ -177,28 +162,6 @@ on-mode-changed = []
     alt-shift-7 = 'move-node-to-workspace 7'
     alt-shift-8 = 'move-node-to-workspace 8'
     alt-shift-9 = 'move-node-to-workspace 9'
-    alt-shift-a = 'move-node-to-workspace A'
-    alt-shift-b = 'move-node-to-workspace B'
-    alt-shift-c = 'move-node-to-workspace C'
-    alt-shift-d = 'move-node-to-workspace D'
-    alt-shift-e = 'move-node-to-workspace E'
-    alt-shift-f = 'move-node-to-workspace F'
-    alt-shift-g = 'move-node-to-workspace G'
-    alt-shift-i = 'move-node-to-workspace I'
-    alt-shift-m = 'move-node-to-workspace M'
-    alt-shift-n = 'move-node-to-workspace N'
-    alt-shift-o = 'move-node-to-workspace O'
-    alt-shift-p = 'move-node-to-workspace P'
-    alt-shift-q = 'move-node-to-workspace Q'
-    alt-shift-r = 'move-node-to-workspace R'
-    alt-shift-s = 'move-node-to-workspace S'
-    alt-shift-t = 'move-node-to-workspace T'
-    alt-shift-u = 'move-node-to-workspace U'
-    alt-shift-v = 'move-node-to-workspace V'
-    alt-shift-w = 'move-node-to-workspace W'
-    alt-shift-x = 'move-node-to-workspace X'
-    alt-shift-y = 'move-node-to-workspace Y'
-    alt-shift-z = 'move-node-to-workspace Z'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
@@ -208,19 +171,26 @@ on-mode-changed = []
     # See: https://nikitabobko.github.io/AeroSpace/commands#mode
     alt-shift-semicolon = 'mode service'
 
-# 'service' binding mode declaration.
-# See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
-[mode.service.binding]
-    esc = ['reload-config', 'mode main']
-    r = ['flatten-workspace-tree', 'mode main'] # reset layout
-    f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
-    backspace = ['close-all-windows-but-current', 'mode main']
+    alt-q = 'workspace prev --wrap-around'
+    alt-e = 'workspace next --wrap-around'
+    alt-u = 'workspace prev --wrap-around'
+    alt-o = 'workspace next --wrap-around'
+    alt-b = 'exec-and-forget open -a /Applications/Brave\ Browser.app'
+    alt-g = 'exec-and-forget open -a /Applications/Ghostty.app'
 
-    # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
-    #s = ['layout sticky tiling', 'mode main']
+# # 'service' binding mode declaration.
+# # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
+# [mode.service.binding]
+#     esc = ['reload-config', 'mode main']
+#     r = ['flatten-workspace-tree', 'mode main'] # reset layout
+#     f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
+#     backspace = ['close-all-windows-but-current', 'mode main']
 
-    alt-shift-h = ['join-with left', 'mode main']
-    alt-shift-j = ['join-with down', 'mode main']
-    alt-shift-k = ['join-with up', 'mode main']
-    alt-shift-l = ['join-with right', 'mode main']
+#     # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
+#     #s = ['layout sticky tiling', 'mode main']
+
+#     alt-shift-h = ['join-with left', 'mode main']
+#     alt-shift-j = ['join-with down', 'mode main']
+#     alt-shift-k = ['join-with up', 'mode main']
+#     alt-shift-l = ['join-with right', 'mode main']
 ```
