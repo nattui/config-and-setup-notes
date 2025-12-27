@@ -45,6 +45,7 @@ brew install --cask cursor
 brew install --cask figma
 brew install --cask ghostty # Terminal
 brew install --cask iina # Video player
+brew install --cask pika # Color picker
 brew install --cask raindropio # Bookmarks
 brew install --cask raycast # Launcher
 brew install --cask shottr # Screenshot
