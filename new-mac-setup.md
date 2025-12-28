@@ -26,16 +26,11 @@ brew install git
 brew install node
 brew install pnpm
 brew install gh
-
-brew tap oven-sh/bun
-brew install bun
+brew install oven-sh/bun/bun
 
 # install fonts
 # https://formulae.brew.sh/cask-font
 brew install --cask font-commit-mono-nerd-font
-brew install --cask font-geist
-brew install --cask font-inter
-brew install --cask font-inter-tight
 brew install --cask font-jetbrains-mono-nerd-font
 
 # install software
@@ -51,6 +46,7 @@ brew install --cask shottr # Screenshot
 brew install --cask spotify
 brew install --cask steam
 brew install --cask the-unarchiver
+brew install --cask brave-browser # Browser
 
 Maybe
 brew install --cask google-chrome
