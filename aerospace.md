@@ -1,6 +1,6 @@
 # Aerospace settings
 
-`~/.aerospace.toml`
+`cursor ~/.aerospace.toml`
 
 ```toml
 # Place a copy of this config to ~/.aerospace.toml
