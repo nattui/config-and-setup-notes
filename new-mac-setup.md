@@ -47,6 +47,7 @@ brew install --cask spotify
 brew install --cask steam
 brew install --cask the-unarchiver
 brew install --cask brave-browser # Browser
+brew install --cask superwhisper
 
 Maybe
 brew install --cask google-chrome
