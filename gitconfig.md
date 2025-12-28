@@ -1,6 +1,6 @@
 # Git config
 
-```
+```toml
 # cursor ~/.gitconfig
 
 [core]
