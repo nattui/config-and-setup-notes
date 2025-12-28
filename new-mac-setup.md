@@ -61,10 +61,11 @@ brew install --cask mechvibes
 # install Starship
 brew install starship
 
+brew install --cask nikitabobko/tap/aerospace
+brew install btop
 brew install eza
 brew install fastfetch
 brew install zoxide
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
-brew install --cask nikitabobko/tap/aerospace
 ```
