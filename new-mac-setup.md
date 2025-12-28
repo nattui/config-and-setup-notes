@@ -34,7 +34,6 @@ brew install bun
 # https://formulae.brew.sh/cask-font
 brew install --cask font-commit-mono-nerd-font
 brew install --cask font-geist
-brew install --cask font-google-sans-code
 brew install --cask font-inter
 brew install --cask font-inter-tight
 brew install --cask font-jetbrains-mono-nerd-font
