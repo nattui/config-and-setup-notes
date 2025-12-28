@@ -3,16 +3,13 @@
 `cursor ~/.aerospace.toml`
 
 ```toml
-# Place a copy of this config to ~/.aerospace.toml
-# After that, you can edit ~/.aerospace.toml to your liking
-
-# Config version for compatibility and deprecations
-# Fallback value (if you omit the key): config-version = 1
 config-version = 2
 
 # You can use it to add commands that run after AeroSpace startup.
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = []
+
+exec-on-workspace-change = []
 
 # Start AeroSpace at login
 start-at-login = true
@@ -21,9 +18,6 @@ start-at-login = true
 enable-normalization-flatten-containers = true
 enable-normalization-opposite-orientation-for-nested-containers = true
 
-# See: https://nikitabobko.github.io/AeroSpace/guide#layouts
-# The 'accordion-padding' specifies the size of accordion padding
-# You can set 0 to disable the padding feature
 accordion-padding = 20
 
 # Possible values: tiles|accordion
@@ -44,34 +38,13 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 # You can effectively turn off macOS "Hide application" (cmd-h) feature by toggling this flag
 # Useful if you don't use this macOS feature, but accidentally hit cmd-h or cmd-alt-h key
 # Also see: https://nikitabobko.github.io/AeroSpace/goodies#disable-hide-app
-automatically-unhide-macos-hidden-apps = false
+automatically-unhide-macos-hidden-apps = true
 
-# List of workspaces that should stay alive even when they contain no windows,
-# even when they are invisible.
-# This config version is only available since 'config-version = 2'
-# Fallback value (if you omit the key): persistent-workspaces = []
-# persistent-workspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C",
-#                          "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O",
-#                          "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-
-# A callback that runs every time binding mode changes
-# See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
-# See: https://nikitabobko.github.io/AeroSpace/commands#mode
 on-mode-changed = []
 
-# Possible values: (qwerty|dvorak|colemak)
-# See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
 [key-mapping]
     preset = 'qwerty'
 
-# Gaps between windows (inner-*) and between monitor edges (outer-*).
-# Possible values:
-# - Constant:     gaps.outer.top = 8
-# - Per monitor:  gaps.outer.top = [{ monitor.main = 16 }, { monitor."some-pattern" = 32 }, 24]
-#                 In this example, 24 is a default value when there is no match.
-#                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
-#                 See:
-#                 https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
     inner.horizontal = 10
     inner.vertical =   10
@@ -80,10 +53,6 @@ on-mode-changed = []
     outer.top =        10
     outer.right =      10
 
-# 'main' binding mode declaration
-# See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
-# 'main' binding mode must be always presented
-# Fallback value (if you omit the key): mode.main.binding = {}
 [mode.main.binding]
 
     # All possible keys:
@@ -118,26 +87,26 @@ on-mode-changed = []
     alt-m = 'layout tiles horizontal vertical'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-    alt-a = 'focus left'
+    alt-q = 'focus left'
     alt-s = 'focus down'
     alt-w = 'focus up'
-    alt-d = 'focus right'
+    alt-e = 'focus right'
 
-    alt-j = 'focus left'
+    alt-u = 'focus left'
     alt-k = 'focus down'
     alt-i = 'focus up'
-    alt-l = 'focus right'
+    alt-o = 'focus right'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move
-    alt-shift-a = 'move left'
+    alt-shift-q = 'move left'
     alt-shift-s = 'move down'
     alt-shift-w = 'move up'
-    alt-shift-d = 'move right'
+    alt-shift-e = 'move right'
 
-    alt-shift-j = 'move left'
+    alt-shift-u = 'move left'
     alt-shift-k = 'move down'
     alt-shift-i = 'move up'
-    alt-shift-l = 'move right'
+    alt-shift-o = 'move right'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#resize
     alt-minus = 'resize smart -50'
@@ -167,32 +136,16 @@ on-mode-changed = []
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
-    # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
-    alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
-    # See: https://nikitabobko.github.io/AeroSpace/commands#mode
-    alt-shift-semicolon = 'mode service'
-
-    alt-q = 'workspace prev --wrap-around'
-    alt-e = 'workspace next --wrap-around'
-    alt-u = 'workspace prev --wrap-around'
-    alt-o = 'workspace next --wrap-around'
+    alt-a = 'workspace prev --wrap-around'
+    alt-d = 'workspace next --wrap-around'
+    alt-j = 'workspace prev --wrap-around'
+    alt-l = 'workspace next --wrap-around'
     alt-b = 'exec-and-forget open -a /Applications/Brave\ Browser.app'
+    alt-x = 'exec-and-forget open -a /Applications/Brave\ Browser.app'
+    alt-c = 'exec-and-forget open -a /Applications/Cursor.app'
+    alt-f = 'exec-and-forget open -a /Applications/Figma.app'
     alt-g = 'exec-and-forget open -a /Applications/Ghostty.app'
+    alt-t = 'exec-and-forget open -a /Applications/Ghostty.app'
 
-# # 'service' binding mode declaration.
-# # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
-# [mode.service.binding]
-#     esc = ['reload-config', 'mode main']
-#     r = ['flatten-workspace-tree', 'mode main'] # reset layout
-#     f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
-#     backspace = ['close-all-windows-but-current', 'mode main']
-
-#     # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
-#     #s = ['layout sticky tiling', 'mode main']
-
-#     alt-shift-h = ['join-with left', 'mode main']
-#     alt-shift-j = ['join-with down', 'mode main']
-#     alt-shift-k = ['join-with up', 'mode main']
-#     alt-shift-l = ['join-with right', 'mode main']
 ```
