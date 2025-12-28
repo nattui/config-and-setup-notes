@@ -48,6 +48,7 @@ brew install --cask steam
 brew install --cask the-unarchiver
 brew install --cask brave-browser # Browser
 brew install --cask superwhisper
+brew install --cask copilot-money
 
 Maybe
 brew install --cask google-chrome
