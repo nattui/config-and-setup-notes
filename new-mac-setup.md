@@ -53,6 +53,7 @@ Maybe
 brew install --cask google-chrome
 brew install --cask productdevbook/tap/portkiller
 brew install --cask slack
+brew install nvm
 
 # Keyboard sounds
 # NK Cream 85 volume
