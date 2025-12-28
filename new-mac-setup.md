@@ -65,4 +65,5 @@ brew install fastfetch
 brew install zoxide
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
+brew install --cask nikitabobko/tap/aerospace
 ```
