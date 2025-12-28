@@ -64,6 +64,7 @@ gh auth switch
 
 ```bash
 # Map identity per directory
+# Make sure it has an ending slash for `includeIf {{ PATH }}/`
 # User 1
 [includeIf "gitdir:~/Documents/{{ FOLDER_PATH_1 }}/"]
   path = ~/.gitconfig-{{ USER_1 }}
