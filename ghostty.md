@@ -15,6 +15,7 @@ font-feature = -calt, -dlig, -liga
 font-size = 12
 foreground = #FFFFFF
 macos-titlebar-style = hidden
+quit-after-last-window-closed = true
 shell-integration-features = no-cursor
 theme = Lovelace
 title = " "
