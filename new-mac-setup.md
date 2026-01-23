@@ -51,6 +51,7 @@ brew install --cask superwhisper
 brew install --cask copilot-money
 brew install --cask lm-studio
 brew install anomalyco/tap/opencode
+brew install --cask yaak # HTTP client
 
 Maybe
 brew install --cask google-chrome
