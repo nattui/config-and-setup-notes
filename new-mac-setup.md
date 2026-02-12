@@ -52,6 +52,7 @@ brew install --cask copilot-money
 brew install --cask lm-studio
 brew install anomalyco/tap/opencode
 brew install --cask yaak # HTTP client
+brew install --cask keycastr # Keystroke visualizer
 
 Maybe
 brew install --cask google-chrome
